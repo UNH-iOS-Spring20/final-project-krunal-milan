@@ -18,10 +18,14 @@ class iParkTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    
+    func newTestInvalidValues() {
+        let emptyName = User.init(Fname:"", Lname: "", Phone: [9,8,7,6,5,4,3,2,1,0])
+               XCTAssertNil(emptyName)
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let incorrectPhoneNumber = User.init(Fname: "Michael", Lname: "Jordan",Phone: [0,1,2,3,4,5,6,7,8])
+        XCTAssertNil(incorrectPhoneNumber)
     }
 
     func testPerformanceExample() {

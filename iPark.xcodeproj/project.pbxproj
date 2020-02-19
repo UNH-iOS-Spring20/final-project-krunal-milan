@@ -19,6 +19,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		556C5DB823FDDBA600F40EE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 931E900F23FDD18900964A58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 931E901623FDD18900964A58;
+			remoteInfo = iPark;
+		};
+		55A0953023FDE2CE0010E607 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 931E900F23FDD18900964A58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 931E901623FDD18900964A58;
+			remoteInfo = iPark;
+		};
 		931E902E23FDD19100964A58 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 931E900F23FDD18900964A58 /* Project object */;
@@ -36,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		556C5DB323FDDBA600F40EE2 /* newTestItemInitFails.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = newTestItemInitFails.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55A0952B23FDE2CE0010E607 /* newTestInvalidValues.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = newTestInvalidValues.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		931E901723FDD18900964A58 /* iPark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		931E901A23FDD18900964A58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		931E901C23FDD18900964A58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +70,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		556C5DB023FDDBA600F40EE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55A0952823FDE2CE0010E607 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		931E901423FDD18900964A58 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -94,6 +124,8 @@
 				931E901723FDD18900964A58 /* iPark.app */,
 				931E902D23FDD19100964A58 /* iParkTests.xctest */,
 				931E903823FDD19100964A58 /* iParkUITests.xctest */,
+				556C5DB323FDDBA600F40EE2 /* newTestItemInitFails.xctest */,
+				55A0952B23FDE2CE0010E607 /* newTestInvalidValues.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,6 +182,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		556C5DB223FDDBA600F40EE2 /* newTestItemInitFails */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 556C5DBC23FDDBA600F40EE2 /* Build configuration list for PBXNativeTarget "newTestItemInitFails" */;
+			buildPhases = (
+				556C5DAF23FDDBA600F40EE2 /* Sources */,
+				556C5DB023FDDBA600F40EE2 /* Frameworks */,
+				556C5DB123FDDBA600F40EE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				556C5DB923FDDBA600F40EE2 /* PBXTargetDependency */,
+			);
+			name = newTestItemInitFails;
+			productName = newTestItemInitFails;
+			productReference = 556C5DB323FDDBA600F40EE2 /* newTestItemInitFails.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		55A0952A23FDE2CE0010E607 /* newTestInvalidValues */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55A0953423FDE2CE0010E607 /* Build configuration list for PBXNativeTarget "newTestInvalidValues" */;
+			buildPhases = (
+				55A0952723FDE2CE0010E607 /* Sources */,
+				55A0952823FDE2CE0010E607 /* Frameworks */,
+				55A0952923FDE2CE0010E607 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55A0953123FDE2CE0010E607 /* PBXTargetDependency */,
+			);
+			name = newTestInvalidValues;
+			productName = newTestInvalidValues;
+			productReference = 55A0952B23FDE2CE0010E607 /* newTestInvalidValues.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		931E901623FDD18900964A58 /* iPark */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 931E904123FDD19100964A58 /* Build configuration list for PBXNativeTarget "iPark" */;
@@ -213,6 +281,14 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Krunal Mistry";
 				TargetAttributes = {
+					556C5DB223FDDBA600F40EE2 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 931E901623FDD18900964A58;
+					};
+					55A0952A23FDE2CE0010E607 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 931E901623FDD18900964A58;
+					};
 					931E901623FDD18900964A58 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -242,11 +318,27 @@
 				931E901623FDD18900964A58 /* iPark */,
 				931E902C23FDD19100964A58 /* iParkTests */,
 				931E903723FDD19100964A58 /* iParkUITests */,
+				556C5DB223FDDBA600F40EE2 /* newTestItemInitFails */,
+				55A0952A23FDE2CE0010E607 /* newTestInvalidValues */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		556C5DB123FDDBA600F40EE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55A0952923FDE2CE0010E607 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		931E901523FDD18900964A58 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -274,6 +366,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		556C5DAF23FDDBA600F40EE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55A0952723FDE2CE0010E607 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		931E901323FDD18900964A58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -304,6 +410,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		556C5DB923FDDBA600F40EE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 931E901623FDD18900964A58 /* iPark */;
+			targetProxy = 556C5DB823FDDBA600F40EE2 /* PBXContainerItemProxy */;
+		};
+		55A0953123FDE2CE0010E607 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 931E901623FDD18900964A58 /* iPark */;
+			targetProxy = 55A0953023FDE2CE0010E607 /* PBXContainerItemProxy */;
+		};
 		931E902F23FDD19100964A58 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 931E901623FDD18900964A58 /* iPark */;
@@ -328,6 +444,82 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		556C5DBA23FDDBA600F40EE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = newTestItemInitFails/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = UNH.newTestItemInitFails;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iPark.app/iPark";
+			};
+			name = Debug;
+		};
+		556C5DBB23FDDBA600F40EE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = newTestItemInitFails/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = UNH.newTestItemInitFails;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iPark.app/iPark";
+			};
+			name = Release;
+		};
+		55A0953223FDE2CE0010E607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = newTestInvalidValues/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = UNH.newTestInvalidValues;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iPark.app/iPark";
+			};
+			name = Debug;
+		};
+		55A0953323FDE2CE0010E607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = newTestInvalidValues/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = UNH.newTestInvalidValues;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iPark.app/iPark";
+			};
+			name = Release;
+		};
 		931E903F23FDD19100964A58 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -563,6 +755,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		556C5DBC23FDDBA600F40EE2 /* Build configuration list for PBXNativeTarget "newTestItemInitFails" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				556C5DBA23FDDBA600F40EE2 /* Debug */,
+				556C5DBB23FDDBA600F40EE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55A0953423FDE2CE0010E607 /* Build configuration list for PBXNativeTarget "newTestInvalidValues" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55A0953223FDE2CE0010E607 /* Debug */,
+				55A0953323FDE2CE0010E607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		931E901223FDD18900964A58 /* Build configuration list for PBXProject "iPark" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
