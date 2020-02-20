@@ -8,10 +8,8 @@
 
 class Ride {
     var rideName: String 
-    var ticketPrice: Double
     
-    init(rideName: String, ticketPrice: Double) {
+    init(rideName: String) {
         self.rideName = rideName
-        self.ticketPrice = ticketPrice
-    }
+        }
 }

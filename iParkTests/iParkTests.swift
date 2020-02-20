@@ -28,18 +28,29 @@ class iParkTests: XCTestCase {
         let iUserNoInfo = User.init(firstName: "", lastName: "", email: "", phone: "(203)822-1010")
         XCTAssertNil(iUserNoInfo)
         
-        let iUserInfoWrong = User.init(firstName: "", lastName: "", email: "krunalmistry", phone: "")
+      //  let iUserInfoWrong = User.init(firstName: "", lastName: "", email: "krunalmistry", phone: "")
     }
     
     func testRidesTickets(){
-        let rideTicket = Ride.init(rideName:"jocker", ticketPrice:19.99)
-        let rideTicket1 = Ride.init(rideName:"batMan", ticketPrice:17.99)
+   )
         
-        let totalTickets = totalRides.init()
-        XCTAssertEqual(0, totalTickets.rides.count)
+        let Rides = totalRides.init()
+        XCTAssertEqual(0, Rides.listOfRides.count)
+    
+        
     }
     
-    func testPerformanceExample() {
+    func testAddRides(){
+        let Ride1  = Ride.init(rideName: "XYZ")
+        let Ride2 = Ride.init(rideName: "ABC")
+        let Rides = totalRides.init()
+        Rides.addRide(myride: Ride1)
+        Rides.addRide(myride: Ride2)
+        XCTAssertEqual(2, Rides.returnTotalRides())
+        
+    }
+    
+    func testPerformanceExample(){
         // This is an example of a performance test case.
         self.measure {
             // Put the code you want to measure the time of here.

@@ -7,9 +7,19 @@
 //
 
 class totalRides {
-    var rides = [Ride]()
+    var listOfRides = [Ride]()
     
-    func addRide(ride : Ride) {
-        rides.append(ride)
+    func addRide (myride:Ride) {
+        listOfRides.append(myride)
+    }
+  
+   
+    func returnTotalRides() -> Int{
+        var numberOfRides: Int = 0
+        for _ in listOfRides{
+            numberOfRides += 1
+        }
+        return numberOfRides
     }
 }
+    
