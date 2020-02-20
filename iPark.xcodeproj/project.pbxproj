@@ -15,7 +15,9 @@
 		931E902723FDD19000964A58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 931E902523FDD19000964A58 /* LaunchScreen.storyboard */; };
 		931E903223FDD19100964A58 /* iParkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931E903123FDD19100964A58 /* iParkTests.swift */; };
 		931E903D23FDD19100964A58 /* iParkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931E903C23FDD19100964A58 /* iParkUITests.swift */; };
-		931E904C23FDD24500964A58 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931E904B23FDD24500964A58 /* User.swift */; };
+		931E904E23FE365C00964A58 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931E904D23FE365C00964A58 /* User.swift */; };
+		931E905023FE3EC500964A58 /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931E904F23FE3EC500964A58 /* Ride.swift */; };
+		931E905223FE41AA00964A58 /* totalRides.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931E905123FE41AA00964A58 /* totalRides.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +68,9 @@
 		931E903823FDD19100964A58 /* iParkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iParkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		931E903C23FDD19100964A58 /* iParkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iParkUITests.swift; sourceTree = "<group>"; };
 		931E903E23FDD19100964A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		931E904B23FDD24500964A58 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		931E904D23FE365C00964A58 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		931E904F23FE3EC500964A58 /* Ride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
+		931E905123FE41AA00964A58 /* totalRides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = totalRides.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +178,9 @@
 		931E904A23FDD1FA00964A58 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				931E904B23FDD24500964A58 /* User.swift */,
+				931E904D23FE365C00964A58 /* User.swift */,
+				931E904F23FE3EC500964A58 /* Ride.swift */,
+				931E905123FE41AA00964A58 /* totalRides.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -384,9 +390,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				931E904C23FDD24500964A58 /* User.swift in Sources */,
+				931E904E23FE365C00964A58 /* User.swift in Sources */,
 				931E901B23FDD18900964A58 /* AppDelegate.swift in Sources */,
 				931E901D23FDD18900964A58 /* SceneDelegate.swift in Sources */,
+				931E905023FE3EC500964A58 /* Ride.swift in Sources */,
+				931E905223FE41AA00964A58 /* totalRides.swift in Sources */,
 				931E901F23FDD18900964A58 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

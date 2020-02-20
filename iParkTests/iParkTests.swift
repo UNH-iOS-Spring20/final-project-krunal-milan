@@ -19,15 +19,26 @@ class iParkTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
     
-    
-    func newTestInvalidValues() {
-        let emptyName = User.init(Fname:"", Lname: "", Phone: [9,8,7,6,5,4,3,2,1,0])
-               XCTAssertNil(emptyName)
-
-        let incorrectPhoneNumber = User.init(Fname: "Michael", Lname: "Jordan",Phone: [0,1,2,3,4,5,6,7,8])
-        XCTAssertNil(incorrectPhoneNumber)
+    func testUserIntializationSucceeds(){
+        let iUserInfo = User.init(firstName:"krunal", lastName:"mistry", email:"krunal@gmail.com", phone:"(203)822-1010")
+        XCTAssertNotNil(iUserInfo)
     }
 
+    func testUserIntializationFails(){
+        let iUserNoInfo = User.init(firstName: "", lastName: "", email: "", phone: "(203)822-1010")
+        XCTAssertNil(iUserNoInfo)
+        
+        let iUserInfoWrong = User.init(firstName: "", lastName: "", email: "krunalmistry", phone: "")
+    }
+    
+    func testRidesTickets(){
+        let rideTicket = Ride.init(rideName:"jocker", ticketPrice:19.99)
+        let rideTicket1 = Ride.init(rideName:"batMan", ticketPrice:17.99)
+        
+        let totalTickets = totalRides.init()
+        XCTAssertEqual(0, totalTickets.rides.count)
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

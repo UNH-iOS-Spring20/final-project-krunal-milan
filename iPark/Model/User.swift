@@ -7,16 +7,19 @@
 //
 
 class User {
-    var Fname: String
-    var Lname: String
-    var Phone: [Int]
+    var firstName: String
+    var lastName: String
+    var email: String
+    var phone: String
     
-    init?(Fname: String, Lname: String, Phone: [Int]) {
-        if Fname.isEmpty || Lname.isEmpty || Phone.count != 10 {
+    init?(firstName:String, lastName: String, email: String, phone: String) {
+        if firstName.isEmpty || lastName.isEmpty || email.isEmpty {
             return nil
         }
-        self.Fname = Fname
-        self.Lname = Lname
-        self.Phone = []
+        self.firstName = firstName
+        self.lastName = lastName
+        self.email = email
+        self.phone = phone
+        
     }
 }
