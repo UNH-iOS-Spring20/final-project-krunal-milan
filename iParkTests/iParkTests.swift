@@ -32,7 +32,7 @@ class iParkTests: XCTestCase {
     }
     
     func testRidesTickets(){
-   )
+   
         
         let Rides = totalRides.init()
         XCTAssertEqual(0, Rides.listOfRides.count)
