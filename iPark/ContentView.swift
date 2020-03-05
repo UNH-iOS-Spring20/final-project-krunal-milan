@@ -14,123 +14,51 @@ let db = Firestore.firestore()
 
 struct ContentView: View {
     var body: some View {
+       
         VStack{
             
-            Button(action: {
-                createShops(collection: "Shops")
-            }){
-                Text("Create Shops")
-                    .font(.largeTitle)
-            }.padding(10.0)
-            
-            
-        Button(action: {
-            getShops(collection: "Shops")
-        }){
-            Text("Get all Shops")
-                .font(.largeTitle)
-        }.padding(10.0)
-            
-            
-            Button(action: {
-                           updateShops(collection: "Shops")
-                       }){
-                           Text("Update Shops")
-                               .font(.largeTitle)
-                       }.padding(10.0)
-            
-          
-            Button(action: {
-                       deleteAllShops(collection: "Shops")
-                   }){
-                       Text("Delete all Shops")
-                           .font(.largeTitle)
-            }.padding(10.0)
-            
+                Circleimage(image: Image("homeimage")).frame(width:450, height:350)
+            Text("iPARK").foregroundColor(.red).frame( width:50, height:10).padding(10)
+                  VStack(alignment:.leading){
+            NavigationView {
+                              List {
+               
+               
+                NavigationLink(destination:ShopsDetails()){
+                   Text("Shops").bold()
+                }.buttonStyle(PlainButtonStyle()).padding(15)
+               
+               
+         Text("Restaurants").bold()
+           .buttonStyle(PlainButtonStyle()).padding(15)
+               
+               
+               
+               
+               
+                          Text("Rides").bold()
+               .buttonStyle(PlainButtonStyle()).padding(15)
+               
+             
+              Text("My Profile").bold()
+               .buttonStyle(PlainButtonStyle()).padding(15)
+               
+           
+        
         }
-            
-    }
-}
-
-private func getShops(collection: String){
-    db.collection(collection).getDocuments(){
-    (querySnapshot, err) in
-    if let err = err{
-        print("Error getting documents: \(err)")
-    }
-    else{
-        for document in querySnapshot!.documents{
-            print("\(document.documentID) => \(document.data())")
-        }
-    }
-    }
-}
-
-
-    
-    
-
-private func deleteAllShops(collection: String){
-    db.collection(collection).getDocuments(){
-        (querySnapshot, err) in
-        if let err = err{
-            print("Error getting documents: \(err)")
-        }
-        else{
-            for document in querySnapshot!.documents{
-                print("Deleting:\(document.documentID) => \(document.data())")
-                document.reference.delete()
+            }.padding(10)
+                    
             }
+           
+            Spacer()
+        
         }
+        
     }
 }
 
-private func createShops(collection: String){
-    let ShopsRef = db.collection("Shops")
-    
-    ShopsRef.document("Modern Apizza").setData([
-        "name":"Modern Apizza",
-        "City":"New Haven",
-        "State":"CT"
-    ])
-    
-    ShopsRef.document("Frank Pepe").setData([
-           "name":"Frank Pepe",
-           "City":"New Haven",
-           "State":"CT"
-       ])
-    
-    ShopsRef.document("Slice Pizza").setData([
-           "name":"Slice Pizza",
-           "City":"New York",
-           "State":"NY"
-       ])
-    
-}
 
-private func updateShops(collection: String){
-    let ShopsRef = db.collection("Shops")
-       
-       ShopsRef.document("Modern Apizza").setData([
-           "name":"Modern Apizza",
-           "City":"New Haven",
-           "State":"CT"
-       ])
-       
-       ShopsRef.document("Frank Pepe").setData([
-              "name":"Frank Pepe",
-              "City":"Mumbai",
-              "State":"MH"
-          ])
-       
-       ShopsRef.document("Slice Pizza").setData([
-              "name":"Slice Pizza",
-              "City":"New London",
-              "State":"CT"
-          ])
 
-    
-}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

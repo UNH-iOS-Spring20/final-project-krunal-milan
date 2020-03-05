@@ -13,6 +13,10 @@
 		55095F0D241151F800A7EB8A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55095F0A241151F800A7EB8A /* GoogleService-Info.plist */; };
 		55095F0E241151F800A7EB8A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55095F0A241151F800A7EB8A /* GoogleService-Info.plist */; };
 		55095F0F241151F800A7EB8A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55095F0A241151F800A7EB8A /* GoogleService-Info.plist */; };
+		55095F132411635500A7EB8A /* homeimage.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 55095F122411635500A7EB8A /* homeimage.jpeg */; };
+		55095F16241164D600A7EB8A /* Circleimage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55095F15241164D600A7EB8A /* Circleimage.swift */; };
+		55095F182411726F00A7EB8A /* Shops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55095F172411726F00A7EB8A /* Shops.swift */; };
+		55095F1B24117ECB00A7EB8A /* ShopsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55095F1A24117ECB00A7EB8A /* ShopsDetails.swift */; };
 		554769D42401A0860088DE29 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554769D32401A0860088DE29 /* SessionStore.swift */; };
 		55D84E392408336E005555B6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 55D84E382408336E005555B6 /* .gitignore */; };
 		931E901B23FDD18900964A58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931E901A23FDD18900964A58 /* AppDelegate.swift */; };
@@ -67,6 +71,10 @@
 		4D28E3D133673B88DF745740 /* Pods-iParkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iParkTests.debug.xcconfig"; path = "Target Support Files/Pods-iParkTests/Pods-iParkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		54CE6EE5DF39A7816BBD1F6A /* Pods_iPark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55095F0A241151F800A7EB8A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		55095F122411635500A7EB8A /* homeimage.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = homeimage.jpeg; path = iPark/Resources/homeimage.jpeg; sourceTree = SOURCE_ROOT; };
+		55095F15241164D600A7EB8A /* Circleimage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circleimage.swift; sourceTree = "<group>"; };
+		55095F172411726F00A7EB8A /* Shops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shops.swift; sourceTree = "<group>"; };
+		55095F1A24117ECB00A7EB8A /* ShopsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsDetails.swift; sourceTree = "<group>"; };
 		554769D32401A0860088DE29 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		556C5DB323FDDBA600F40EE2 /* newTestItemInitFails.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = newTestItemInitFails.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55A0952B23FDE2CE0010E607 /* newTestInvalidValues.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = newTestInvalidValues.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +155,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		55095F142411637400A7EB8A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				55095F122411635500A7EB8A /* homeimage.jpeg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		55095F1924117EB600A7EB8A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				55095F1A24117ECB00A7EB8A /* ShopsDetails.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		837555B3DCA11ECE0BDAE195 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,7 +181,6 @@
 				4D28E3D133673B88DF745740 /* Pods-iParkTests.debug.xcconfig */,
 				5B804766599BF9C176D0EFC1 /* Pods-iParkTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -189,6 +212,8 @@
 		931E901923FDD18900964A58 /* iPark */ = {
 			isa = PBXGroup;
 			children = (
+				55095F1924117EB600A7EB8A /* Views */,
+				55095F142411637400A7EB8A /* Resources */,
 				931E904A23FDD1FA00964A58 /* Model */,
 				931E901A23FDD18900964A58 /* AppDelegate.swift */,
 				931E901C23FDD18900964A58 /* SceneDelegate.swift */,
@@ -199,6 +224,7 @@
 				931E902523FDD19000964A58 /* LaunchScreen.storyboard */,
 				931E902823FDD19000964A58 /* Info.plist */,
 				931E902223FDD19000964A58 /* Preview Content */,
+				55095F15241164D600A7EB8A /* Circleimage.swift */,
 			);
 			path = iPark;
 			sourceTree = "<group>";
@@ -235,6 +261,7 @@
 				931E904D23FE365C00964A58 /* User.swift */,
 				931E904F23FE3EC500964A58 /* Ride.swift */,
 				931E905123FE41AA00964A58 /* totalRides.swift */,
+				55095F172411726F00A7EB8A /* Shops.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -410,6 +437,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55095F132411635500A7EB8A /* homeimage.jpeg in Resources */,
 				55D84E392408336E005555B6 /* .gitignore in Resources */,
 				931E902723FDD19000964A58 /* LaunchScreen.storyboard in Resources */,
 				55095F0B241151F800A7EB8A /* GoogleService-Info.plist in Resources */,
@@ -559,9 +587,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				931E904E23FE365C00964A58 /* User.swift in Sources */,
+				55095F16241164D600A7EB8A /* Circleimage.swift in Sources */,
 				554769D42401A0860088DE29 /* SessionStore.swift in Sources */,
 				931E901B23FDD18900964A58 /* AppDelegate.swift in Sources */,
+				55095F1B24117ECB00A7EB8A /* ShopsDetails.swift in Sources */,
 				931E901D23FDD18900964A58 /* SceneDelegate.swift in Sources */,
+				55095F182411726F00A7EB8A /* Shops.swift in Sources */,
 				931E905023FE3EC500964A58 /* Ride.swift in Sources */,
 				931E905223FE41AA00964A58 /* totalRides.swift in Sources */,
 				931E901F23FDD18900964A58 /* ContentView.swift in Sources */,
