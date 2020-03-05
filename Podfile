@@ -6,13 +6,12 @@ target 'iPark' do
   use_frameworks!
 
   # Pods for iPark
-pod 'Firebase/Analytics'
-# add pods for any other desired Firebase products
 pod 'Firebase/Auth'
+pod 'Firebase/Analytics'
+pod 'Firebase/Database'
+pod 'Firebase/Core'
 pod 'Firebase/Firestore'
-pod 'Firebase/AdMob'
-pod 'FirebaseUI/Auth'
-# https://firebase.google.com/docs/ios/setup#available-pods
+
 
   target 'iParkTests' do
     inherit! :search_paths

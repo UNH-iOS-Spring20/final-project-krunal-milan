@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2E481CEC624D9D92C562E15E /* Pods_iParkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C7D4DB8F8C31460C9F0FB0 /* Pods_iParkTests.framework */; };
+		55095F0B241151F800A7EB8A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55095F0A241151F800A7EB8A /* GoogleService-Info.plist */; };
+		55095F0C241151F800A7EB8A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55095F0A241151F800A7EB8A /* GoogleService-Info.plist */; };
+		55095F0D241151F800A7EB8A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55095F0A241151F800A7EB8A /* GoogleService-Info.plist */; };
+		55095F0E241151F800A7EB8A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55095F0A241151F800A7EB8A /* GoogleService-Info.plist */; };
+		55095F0F241151F800A7EB8A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55095F0A241151F800A7EB8A /* GoogleService-Info.plist */; };
 		554769D42401A0860088DE29 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554769D32401A0860088DE29 /* SessionStore.swift */; };
-		557DBFF423FF6D3D00A29374 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 557DBFF323FF6D3D00A29374 /* GoogleService-Info.plist */; };
-		557DBFF523FF6D3D00A29374 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 557DBFF323FF6D3D00A29374 /* GoogleService-Info.plist */; };
-		557DBFF623FF6D3D00A29374 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 557DBFF323FF6D3D00A29374 /* GoogleService-Info.plist */; };
-		557DBFF723FF6D3D00A29374 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 557DBFF323FF6D3D00A29374 /* GoogleService-Info.plist */; };
-		557DBFF823FF6D3D00A29374 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 557DBFF323FF6D3D00A29374 /* GoogleService-Info.plist */; };
 		55D84E392408336E005555B6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 55D84E382408336E005555B6 /* .gitignore */; };
 		931E901B23FDD18900964A58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931E901A23FDD18900964A58 /* AppDelegate.swift */; };
 		931E901D23FDD18900964A58 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931E901C23FDD18900964A58 /* SceneDelegate.swift */; };
@@ -62,18 +62,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2E3015D65E6F9FD2F5E039CE /* Pods-iParkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iParkTests.debug.xcconfig"; path = "Target Support Files/Pods-iParkTests/Pods-iParkTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3F9D670B5AD42C01244E7EC4 /* Pods-iPark-iParkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPark-iParkUITests.release.xcconfig"; path = "Target Support Files/Pods-iPark-iParkUITests/Pods-iPark-iParkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0E6E818F07FA4DCAE1CA17A2 /* Pods-iPark-iParkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPark-iParkUITests.debug.xcconfig"; path = "Target Support Files/Pods-iPark-iParkUITests/Pods-iPark-iParkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		18F6E3A805911FE8D39D26BE /* Pods-iPark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPark.debug.xcconfig"; path = "Target Support Files/Pods-iPark/Pods-iPark.debug.xcconfig"; sourceTree = "<group>"; };
+		4D28E3D133673B88DF745740 /* Pods-iParkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iParkTests.debug.xcconfig"; path = "Target Support Files/Pods-iParkTests/Pods-iParkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		54CE6EE5DF39A7816BBD1F6A /* Pods_iPark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55095F0A241151F800A7EB8A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		554769D32401A0860088DE29 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
 		556C5DB323FDDBA600F40EE2 /* newTestItemInitFails.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = newTestItemInitFails.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		557DBFF323FF6D3D00A29374 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		55A0952B23FDE2CE0010E607 /* newTestInvalidValues.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = newTestInvalidValues.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55D84E382408336E005555B6 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		83D60D910E299C71C8B5163E /* Pods-iParkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iParkTests.release.xcconfig"; path = "Target Support Files/Pods-iParkTests/Pods-iParkTests.release.xcconfig"; sourceTree = "<group>"; };
+		5B804766599BF9C176D0EFC1 /* Pods-iParkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iParkTests.release.xcconfig"; path = "Target Support Files/Pods-iParkTests/Pods-iParkTests.release.xcconfig"; sourceTree = "<group>"; };
+		64B89545D805965D53AD77AD /* Pods-iPark-iParkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPark-iParkUITests.release.xcconfig"; path = "Target Support Files/Pods-iPark-iParkUITests/Pods-iPark-iParkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6C943D6ADC9E549068001E87 /* Pods-iPark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPark.release.xcconfig"; path = "Target Support Files/Pods-iPark/Pods-iPark.release.xcconfig"; sourceTree = "<group>"; };
 		89C7D4DB8F8C31460C9F0FB0 /* Pods_iParkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iParkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C88E87611574885A788D916 /* Pods-iPark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPark.debug.xcconfig"; path = "Target Support Files/Pods-iPark/Pods-iPark.debug.xcconfig"; sourceTree = "<group>"; };
-		8DC49633668397F77D768322 /* Pods-iPark.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPark.release.xcconfig"; path = "Target Support Files/Pods-iPark/Pods-iPark.release.xcconfig"; sourceTree = "<group>"; };
 		931E901723FDD18900964A58 /* iPark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		931E901A23FDD18900964A58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		931E901C23FDD18900964A58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,7 +92,6 @@
 		931E904D23FE365C00964A58 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		931E904F23FE3EC500964A58 /* Ride.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
 		931E905123FE41AA00964A58 /* totalRides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = totalRides.swift; sourceTree = "<group>"; };
-		98446F7BC9C845C37B8F0B55 /* Pods-iPark-iParkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPark-iParkUITests.debug.xcconfig"; path = "Target Support Files/Pods-iPark-iParkUITests/Pods-iPark-iParkUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BC40C70ACAFA319C247E0BD8 /* Pods_iPark_iParkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPark_iParkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -137,19 +137,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06A9D3B10E7E2167ECE68687 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8C88E87611574885A788D916 /* Pods-iPark.debug.xcconfig */,
-				8DC49633668397F77D768322 /* Pods-iPark.release.xcconfig */,
-				98446F7BC9C845C37B8F0B55 /* Pods-iPark-iParkUITests.debug.xcconfig */,
-				3F9D670B5AD42C01244E7EC4 /* Pods-iPark-iParkUITests.release.xcconfig */,
-				2E3015D65E6F9FD2F5E039CE /* Pods-iParkTests.debug.xcconfig */,
-				83D60D910E299C71C8B5163E /* Pods-iParkTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		1D5104CFC5E8B1C484A1B3EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +147,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		837555B3DCA11ECE0BDAE195 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18F6E3A805911FE8D39D26BE /* Pods-iPark.debug.xcconfig */,
+				6C943D6ADC9E549068001E87 /* Pods-iPark.release.xcconfig */,
+				0E6E818F07FA4DCAE1CA17A2 /* Pods-iPark-iParkUITests.debug.xcconfig */,
+				64B89545D805965D53AD77AD /* Pods-iPark-iParkUITests.release.xcconfig */,
+				4D28E3D133673B88DF745740 /* Pods-iParkTests.debug.xcconfig */,
+				5B804766599BF9C176D0EFC1 /* Pods-iParkTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		931E900E23FDD18900964A58 = {
 			isa = PBXGroup;
 			children = (
@@ -168,8 +169,8 @@
 				931E903023FDD19100964A58 /* iParkTests */,
 				931E903B23FDD19100964A58 /* iParkUITests */,
 				931E901823FDD18900964A58 /* Products */,
-				06A9D3B10E7E2167ECE68687 /* Pods */,
 				1D5104CFC5E8B1C484A1B3EF /* Frameworks */,
+				837555B3DCA11ECE0BDAE195 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -192,8 +193,8 @@
 				931E901A23FDD18900964A58 /* AppDelegate.swift */,
 				931E901C23FDD18900964A58 /* SceneDelegate.swift */,
 				931E901E23FDD18900964A58 /* ContentView.swift */,
+				55095F0A241151F800A7EB8A /* GoogleService-Info.plist */,
 				554769D32401A0860088DE29 /* SessionStore.swift */,
-				557DBFF323FF6D3D00A29374 /* GoogleService-Info.plist */,
 				931E902023FDD19000964A58 /* Assets.xcassets */,
 				931E902523FDD19000964A58 /* LaunchScreen.storyboard */,
 				931E902823FDD19000964A58 /* Info.plist */,
@@ -286,7 +287,6 @@
 				931E901423FDD18900964A58 /* Frameworks */,
 				931E901523FDD18900964A58 /* Resources */,
 				4603EB0E4A02E95E05B0F010 /* [CP] Embed Pods Frameworks */,
-				F977AD79D0931A22583C0CAF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -325,7 +325,6 @@
 				931E903523FDD19100964A58 /* Frameworks */,
 				931E903623FDD19100964A58 /* Resources */,
 				56703749D9D7ACD0C557713D /* [CP] Embed Pods Frameworks */,
-				8FB1237290B0B98FC984FEDA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -395,7 +394,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				557DBFF723FF6D3D00A29374 /* GoogleService-Info.plist in Resources */,
+				55095F0E241151F800A7EB8A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,7 +402,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				557DBFF823FF6D3D00A29374 /* GoogleService-Info.plist in Resources */,
+				55095F0F241151F800A7EB8A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,7 +412,7 @@
 			files = (
 				55D84E392408336E005555B6 /* .gitignore in Resources */,
 				931E902723FDD19000964A58 /* LaunchScreen.storyboard in Resources */,
-				557DBFF423FF6D3D00A29374 /* GoogleService-Info.plist in Resources */,
+				55095F0B241151F800A7EB8A /* GoogleService-Info.plist in Resources */,
 				931E902423FDD19000964A58 /* Preview Assets.xcassets in Resources */,
 				931E902123FDD19000964A58 /* Assets.xcassets in Resources */,
 			);
@@ -423,7 +422,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				557DBFF523FF6D3D00A29374 /* GoogleService-Info.plist in Resources */,
+				55095F0C241151F800A7EB8A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,7 +430,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				557DBFF623FF6D3D00A29374 /* GoogleService-Info.plist in Resources */,
+				55095F0D241151F800A7EB8A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,40 +513,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iPark-iParkUITests/Pods-iPark-iParkUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8FB1237290B0B98FC984FEDA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iPark-iParkUITests/Pods-iPark-iParkUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iPark-iParkUITests/Pods-iPark-iParkUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iPark-iParkUITests/Pods-iPark-iParkUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F977AD79D0931A22583C0CAF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iPark/Pods-iPark-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-iPark/Pods-iPark-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iPark/Pods-iPark-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FA6981C626468FC4071D7FF1 /* [CP] Check Pods Manifest.lock */ = {
@@ -848,7 +813,7 @@
 		};
 		931E904223FDD19100964A58 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C88E87611574885A788D916 /* Pods-iPark.debug.xcconfig */;
+			baseConfigurationReference = 18F6E3A805911FE8D39D26BE /* Pods-iPark.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -868,7 +833,7 @@
 		};
 		931E904323FDD19100964A58 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DC49633668397F77D768322 /* Pods-iPark.release.xcconfig */;
+			baseConfigurationReference = 6C943D6ADC9E549068001E87 /* Pods-iPark.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -888,7 +853,7 @@
 		};
 		931E904523FDD19100964A58 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E3015D65E6F9FD2F5E039CE /* Pods-iParkTests.debug.xcconfig */;
+			baseConfigurationReference = 4D28E3D133673B88DF745740 /* Pods-iParkTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -910,7 +875,7 @@
 		};
 		931E904623FDD19100964A58 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83D60D910E299C71C8B5163E /* Pods-iParkTests.release.xcconfig */;
+			baseConfigurationReference = 5B804766599BF9C176D0EFC1 /* Pods-iParkTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -932,7 +897,7 @@
 		};
 		931E904823FDD19100964A58 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98446F7BC9C845C37B8F0B55 /* Pods-iPark-iParkUITests.debug.xcconfig */;
+			baseConfigurationReference = 0E6E818F07FA4DCAE1CA17A2 /* Pods-iPark-iParkUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -952,7 +917,7 @@
 		};
 		931E904923FDD19100964A58 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F9D670B5AD42C01244E7EC4 /* Pods-iPark-iParkUITests.release.xcconfig */;
+			baseConfigurationReference = 64B89545D805965D53AD77AD /* Pods-iPark-iParkUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
