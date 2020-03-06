@@ -93,19 +93,19 @@ struct ShopsDetails: View {
         
         ShopsRef.document("Big Top Souvenirs").setData([
                "Name":"Big Top Souvenirs",
-               "City":"West Gate",
+               "Location":"West Gate",
                "Category":"$$$"
            ])
         
         ShopsRef.document("Calypso Trading Post").setData([
                "Name":"Calypso Trading Post",
-               "City":"South Corridor",
+               "Location":"South Corridor",
                "Category":"$"
            ])
 
         ShopsRef.document("The Brass Bazaar").setData([
                   "Name":"The Brass Bazaar",
-                  "City":"South Corridor",
+                  "Location":"South Corridor",
                   "Category":"$$"
               ])
 

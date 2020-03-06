@@ -40,13 +40,13 @@ struct ContentView: View {
                .buttonStyle(PlainButtonStyle()).padding(15)
                
              
-              Text("My Profile").bold()
+              Text("Users").bold()
                .buttonStyle(PlainButtonStyle()).padding(15)
                
            
         
         }
-            }.padding(10)
+            }.padding (10)
                     
             }
            
