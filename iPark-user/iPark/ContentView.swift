@@ -12,50 +12,55 @@ import FirebaseFirestore
 
 let db = Firestore.firestore()
 
+
+
+
 struct ContentView: View {
+    
+   
     var body: some View {
+        
        
-        VStack{
-            
-                Circleimage(image: Image("homeimage")).frame(width:450, height:350)
-            Text("iPARK").foregroundColor(.red).frame( width:50, height:10).padding(10)
-                  VStack(alignment:.leading){
-            NavigationView {
-                              List {
-               
-               
-                NavigationLink(destination:ShopsDetails()){
-                   Text("Shops").bold()
-                }.buttonStyle(PlainButtonStyle()).padding(15)
-               
-               
-         Text("Restaurants").bold()
-           .buttonStyle(PlainButtonStyle()).padding(15)
-               
-               
-               
-               
-               
-                          Text("Rides").bold()
-               .buttonStyle(PlainButtonStyle()).padding(15)
-               
-             
-              Text("Users").bold()
-               .buttonStyle(PlainButtonStyle()).padding(15)
-               
-           
-        
-        }
-            }.padding (10)
-                    
-            }
-           
-            Spacer()
-        
+        Text("Hello World")
         }
         
-    }
 }
+        /*
+         
+         
+         NavigationView{
+         
+         TabView {
+         ShopsDetails()
+         .tabItem {
+         Image(systemName: "house.fill")
+         
+         Text("Home")
+         }
+         Text("Second View")
+         .tabItem {
+         Image(systemName: "person.fill")
+         Text("My Tickets")
+         }
+         Text("The content of the third view")
+         .tabItem {
+         Image(systemName: "info.circle.fill")
+         Text("iPark Info")
+         }
+         
+         }
+         .navigationBarTitle("iPark", displayMode:.inline)
+         
+         
+         }
+         
+         */
+        
+        
+        
+    
+    
+    
 
 
 

@@ -13,7 +13,7 @@ struct Circleimage: View {
     
     var body: some View {
 
-        image.resizable().frame(width: 425, height: 350)
+        image.resizable().frame(width: 420, height: 320)
         
     }
 }

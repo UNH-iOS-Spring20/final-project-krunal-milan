@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CD8EA666224B6E9DF7B95ED /* Pods_iPark_Admin_iPark_AdminUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D4B869F74F5102638716638 /* Pods_iPark_Admin_iPark_AdminUITests.framework */; };
-		3899B0BB40645F98AF47EDE6 /* Pods_iPark_AdminTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724EC329D9852D37B4542164 /* Pods_iPark_AdminTests.framework */; };
-		4E1AF2F276B5118735965223 /* Pods_iPark_Admin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A2A5E2366643B044E9A59E /* Pods_iPark_Admin.framework */; };
+		01BB5B1708E7FDE616494A58 /* Pods_iPark_Admin_iPark_AdminUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B301ACF5B81E0E36ADAF42 /* Pods_iPark_Admin_iPark_AdminUITests.framework */; };
 		55474ADF2412EA4600E7FC24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55474ADE2412EA4600E7FC24 /* AppDelegate.swift */; };
 		55474AE12412EA4600E7FC24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55474AE02412EA4600E7FC24 /* SceneDelegate.swift */; };
 		55474AE32412EA4600E7FC24 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55474AE22412EA4600E7FC24 /* ContentView.swift */; };
@@ -21,9 +19,21 @@
 		55474B0F2412EB1300E7FC24 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55474B0E2412EB1300E7FC24 /* GoogleService-Info.plist */; };
 		55474B102412EB1300E7FC24 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55474B0E2412EB1300E7FC24 /* GoogleService-Info.plist */; };
 		55474B112412EB1300E7FC24 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 55474B0E2412EB1300E7FC24 /* GoogleService-Info.plist */; };
-		55474B142412ED9600E7FC24 /* ShopDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55474B132412ED9600E7FC24 /* ShopDetails.swift */; };
 		55474B162412EF5F00E7FC24 /* HomeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55474B152412EF5F00E7FC24 /* HomeImage.swift */; };
-		55C975152414784A0042C452 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 55C97514241478490042C452 /* .gitignore */; };
+		55A20FAF245B4FF40057AB30 /* FirebaseCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A20FAE245B4FF40057AB30 /* FirebaseCollection.swift */; };
+		55A20FB3245B52350057AB30 /* ListofShops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A20FB2245B52350057AB30 /* ListofShops.swift */; };
+		55A20FB9245B561B0057AB30 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 55A20FB8245B561B0057AB30 /* .gitignore */; };
+		55D3BD6324566EC9003030F0 /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D3BD6124566EC9003030F0 /* Ride.swift */; };
+		55D3BD6424566EC9003030F0 /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D3BD6124566EC9003030F0 /* Ride.swift */; };
+		55D3BD6524566EC9003030F0 /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D3BD6124566EC9003030F0 /* Ride.swift */; };
+		55D3BD6624566EC9003030F0 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D3BD6224566EC9003030F0 /* Shop.swift */; };
+		55D3BD6724566EC9003030F0 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D3BD6224566EC9003030F0 /* Shop.swift */; };
+		55D3BD6824566EC9003030F0 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D3BD6224566EC9003030F0 /* Shop.swift */; };
+		55D3BD6A24566ED6003030F0 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D3BD6924566ED6003030F0 /* Restaurant.swift */; };
+		55D3BD6B24566ED6003030F0 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D3BD6924566ED6003030F0 /* Restaurant.swift */; };
+		55D3BD6C24566ED6003030F0 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D3BD6924566ED6003030F0 /* Restaurant.swift */; };
+		5A6B8CD0C532A2BB44447E99 /* Pods_iPark_AdminTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B3CFF60BD0EC995CB305F6F /* Pods_iPark_AdminTests.framework */; };
+		F5178B265ED7210111A2C6CD /* Pods_iPark_Admin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7232C1271076B219F346F798 /* Pods_iPark_Admin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +54,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		47A2A5E2366643B044E9A59E /* Pods_iPark_Admin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPark_Admin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18D508B27D7C12DF7572DE03 /* Pods-iPark-AdminTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPark-AdminTests.debug.xcconfig"; path = "Target Support Files/Pods-iPark-AdminTests/Pods-iPark-AdminTests.debug.xcconfig"; sourceTree = "<group>"; };
+		23B301ACF5B81E0E36ADAF42 /* Pods_iPark_Admin_iPark_AdminUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPark_Admin_iPark_AdminUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D4E0085BC22FA15E6147729 /* Pods-iPark-Admin-iPark-AdminUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPark-Admin-iPark-AdminUITests.debug.xcconfig"; path = "Target Support Files/Pods-iPark-Admin-iPark-AdminUITests/Pods-iPark-Admin-iPark-AdminUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		55474ADB2412EA4600E7FC24 /* iPark-Admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iPark-Admin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55474ADE2412EA4600E7FC24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55474AE02412EA4600E7FC24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,17 +72,19 @@
 		55474B002412EA4700E7FC24 /* iPark_AdminUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPark_AdminUITests.swift; sourceTree = "<group>"; };
 		55474B022412EA4700E7FC24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55474B0E2412EB1300E7FC24 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		55474B132412ED9600E7FC24 /* ShopDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDetails.swift; sourceTree = "<group>"; };
 		55474B152412EF5F00E7FC24 /* HomeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeImage.swift; sourceTree = "<group>"; };
-		55C97514241478490042C452 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .gitignore; path = "../../iPark-user/.gitignore"; sourceTree = "<group>"; };
-		5C51B6513B5D18BBC1E0E9C6 /* Pods-iPark-AdminTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPark-AdminTests.release.xcconfig"; path = "Target Support Files/Pods-iPark-AdminTests/Pods-iPark-AdminTests.release.xcconfig"; sourceTree = "<group>"; };
-		6F846B3925FB796D6155E48E /* Pods-iPark-Admin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPark-Admin.release.xcconfig"; path = "Target Support Files/Pods-iPark-Admin/Pods-iPark-Admin.release.xcconfig"; sourceTree = "<group>"; };
-		724EC329D9852D37B4542164 /* Pods_iPark_AdminTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPark_AdminTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F0DC2400682038F5298BC1D /* Pods-iPark-AdminTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPark-AdminTests.debug.xcconfig"; path = "Target Support Files/Pods-iPark-AdminTests/Pods-iPark-AdminTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9D4B869F74F5102638716638 /* Pods_iPark_Admin_iPark_AdminUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPark_Admin_iPark_AdminUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B975227AE8C92C64237FCF75 /* Pods-iPark-Admin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPark-Admin.debug.xcconfig"; path = "Target Support Files/Pods-iPark-Admin/Pods-iPark-Admin.debug.xcconfig"; sourceTree = "<group>"; };
-		E58B5D1692E0C56EB1FBD18E /* Pods-iPark-Admin-iPark-AdminUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPark-Admin-iPark-AdminUITests.debug.xcconfig"; path = "Target Support Files/Pods-iPark-Admin-iPark-AdminUITests/Pods-iPark-Admin-iPark-AdminUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		E7049F8E2EE1657BF02F7DF3 /* Pods-iPark-Admin-iPark-AdminUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPark-Admin-iPark-AdminUITests.release.xcconfig"; path = "Target Support Files/Pods-iPark-Admin-iPark-AdminUITests/Pods-iPark-Admin-iPark-AdminUITests.release.xcconfig"; sourceTree = "<group>"; };
+		55A20FAE245B4FF40057AB30 /* FirebaseCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCollection.swift; sourceTree = "<group>"; };
+		55A20FB2245B52350057AB30 /* ListofShops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListofShops.swift; sourceTree = SOURCE_ROOT; };
+		55A20FB8245B561B0057AB30 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		55D3BD6124566EC9003030F0 /* Ride.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
+		55D3BD6224566EC9003030F0 /* Shop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		55D3BD6924566ED6003030F0 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		5EF8FBC3D347E3C2AE93E445 /* Pods-iPark-Admin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPark-Admin.debug.xcconfig"; path = "Target Support Files/Pods-iPark-Admin/Pods-iPark-Admin.debug.xcconfig"; sourceTree = "<group>"; };
+		6B3CFF60BD0EC995CB305F6F /* Pods_iPark_AdminTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPark_AdminTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7232C1271076B219F346F798 /* Pods_iPark_Admin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPark_Admin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BCCC09CE57372AD2B2FF1A /* Pods-iPark-Admin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPark-Admin.release.xcconfig"; path = "Target Support Files/Pods-iPark-Admin/Pods-iPark-Admin.release.xcconfig"; sourceTree = "<group>"; };
+		8B370EE946C16A426B9F26D0 /* Pods-iPark-Admin-iPark-AdminUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPark-Admin-iPark-AdminUITests.release.xcconfig"; path = "Target Support Files/Pods-iPark-Admin-iPark-AdminUITests/Pods-iPark-Admin-iPark-AdminUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D52122BF823F3E4B69058BC8 /* Pods-iPark-AdminTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPark-AdminTests.release.xcconfig"; path = "Target Support Files/Pods-iPark-AdminTests/Pods-iPark-AdminTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E1AF2F276B5118735965223 /* Pods_iPark_Admin.framework in Frameworks */,
+				F5178B265ED7210111A2C6CD /* Pods_iPark_Admin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3899B0BB40645F98AF47EDE6 /* Pods_iPark_AdminTests.framework in Frameworks */,
+				5A6B8CD0C532A2BB44447E99 /* Pods_iPark_AdminTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,24 +108,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CD8EA666224B6E9DF7B95ED /* Pods_iPark_Admin_iPark_AdminUITests.framework in Frameworks */,
+				01BB5B1708E7FDE616494A58 /* Pods_iPark_Admin_iPark_AdminUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		53D1A15F467BDACC6FCED5B3 /* Pods */ = {
+		1AE34D4AA76BB00B3A2063B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B975227AE8C92C64237FCF75 /* Pods-iPark-Admin.debug.xcconfig */,
-				6F846B3925FB796D6155E48E /* Pods-iPark-Admin.release.xcconfig */,
-				E58B5D1692E0C56EB1FBD18E /* Pods-iPark-Admin-iPark-AdminUITests.debug.xcconfig */,
-				E7049F8E2EE1657BF02F7DF3 /* Pods-iPark-Admin-iPark-AdminUITests.release.xcconfig */,
-				8F0DC2400682038F5298BC1D /* Pods-iPark-AdminTests.debug.xcconfig */,
-				5C51B6513B5D18BBC1E0E9C6 /* Pods-iPark-AdminTests.release.xcconfig */,
+				7232C1271076B219F346F798 /* Pods_iPark_Admin.framework */,
+				23B301ACF5B81E0E36ADAF42 /* Pods_iPark_Admin_iPark_AdminUITests.framework */,
+				6B3CFF60BD0EC995CB305F6F /* Pods_iPark_AdminTests.framework */,
 			);
-			path = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		55474AD22412EA4600E7FC24 = {
@@ -121,8 +132,8 @@
 				55474AF42412EA4700E7FC24 /* iPark-AdminTests */,
 				55474AFF2412EA4700E7FC24 /* iPark-AdminUITests */,
 				55474ADC2412EA4600E7FC24 /* Products */,
-				53D1A15F467BDACC6FCED5B3 /* Pods */,
-				B9DD9464D37C89540C3A7276 /* Frameworks */,
+				BD46B84C97C0BCE55E23E194 /* Pods */,
+				1AE34D4AA76BB00B3A2063B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,9 +150,10 @@
 		55474ADD2412EA4600E7FC24 /* iPark-Admin */ = {
 			isa = PBXGroup;
 			children = (
-				55C97514241478490042C452 /* .gitignore */,
-				55474B122412ED7F00E7FC24 /* Views */,
+				55D3BD6024566EAE003030F0 /* Models */,
+				55D3BD40245600A1003030F0 /* Session */,
 				55474ADE2412EA4600E7FC24 /* AppDelegate.swift */,
+				55474B122412ED7F00E7FC24 /* Views */,
 				55474AE02412EA4600E7FC24 /* SceneDelegate.swift */,
 				55474AE22412EA4600E7FC24 /* ContentView.swift */,
 				55474AE42412EA4700E7FC24 /* Assets.xcassets */,
@@ -150,6 +162,7 @@
 				55474B152412EF5F00E7FC24 /* HomeImage.swift */,
 				55474AEC2412EA4700E7FC24 /* Info.plist */,
 				55474AE62412EA4700E7FC24 /* Preview Content */,
+				55A20FB8245B561B0057AB30 /* .gitignore */,
 			);
 			path = "iPark-Admin";
 			sourceTree = "<group>";
@@ -183,19 +196,41 @@
 		55474B122412ED7F00E7FC24 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				55474B132412ED9600E7FC24 /* ShopDetails.swift */,
+				55A20FB2245B52350057AB30 /* ListofShops.swift */,
 			);
-			path = Views;
+			name = Views;
+			path = Models/Views;
 			sourceTree = "<group>";
 		};
-		B9DD9464D37C89540C3A7276 /* Frameworks */ = {
+		55D3BD40245600A1003030F0 /* Session */ = {
 			isa = PBXGroup;
 			children = (
-				47A2A5E2366643B044E9A59E /* Pods_iPark_Admin.framework */,
-				9D4B869F74F5102638716638 /* Pods_iPark_Admin_iPark_AdminUITests.framework */,
-				724EC329D9852D37B4542164 /* Pods_iPark_AdminTests.framework */,
+				55A20FAE245B4FF40057AB30 /* FirebaseCollection.swift */,
 			);
-			name = Frameworks;
+			path = Session;
+			sourceTree = "<group>";
+		};
+		55D3BD6024566EAE003030F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				55D3BD6124566EC9003030F0 /* Ride.swift */,
+				55D3BD6924566ED6003030F0 /* Restaurant.swift */,
+				55D3BD6224566EC9003030F0 /* Shop.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BD46B84C97C0BCE55E23E194 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EF8FBC3D347E3C2AE93E445 /* Pods-iPark-Admin.debug.xcconfig */,
+				84BCCC09CE57372AD2B2FF1A /* Pods-iPark-Admin.release.xcconfig */,
+				2D4E0085BC22FA15E6147729 /* Pods-iPark-Admin-iPark-AdminUITests.debug.xcconfig */,
+				8B370EE946C16A426B9F26D0 /* Pods-iPark-Admin-iPark-AdminUITests.release.xcconfig */,
+				18D508B27D7C12DF7572DE03 /* Pods-iPark-AdminTests.debug.xcconfig */,
+				D52122BF823F3E4B69058BC8 /* Pods-iPark-AdminTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,7 +342,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55C975152414784A0042C452 /* .gitignore in Resources */,
+				55A20FB9245B561B0057AB30 /* .gitignore in Resources */,
 				55474AEB2412EA4700E7FC24 /* LaunchScreen.storyboard in Resources */,
 				55474B0F2412EB1300E7FC24 /* GoogleService-Info.plist in Resources */,
 				55474AE82412EA4700E7FC24 /* Preview Assets.xcassets in Resources */,
@@ -442,10 +477,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				55474B162412EF5F00E7FC24 /* HomeImage.swift in Sources */,
-				55474B142412ED9600E7FC24 /* ShopDetails.swift in Sources */,
 				55474ADF2412EA4600E7FC24 /* AppDelegate.swift in Sources */,
+				55A20FB3245B52350057AB30 /* ListofShops.swift in Sources */,
+				55D3BD6324566EC9003030F0 /* Ride.swift in Sources */,
+				55A20FAF245B4FF40057AB30 /* FirebaseCollection.swift in Sources */,
 				55474AE12412EA4600E7FC24 /* SceneDelegate.swift in Sources */,
+				55D3BD6A24566ED6003030F0 /* Restaurant.swift in Sources */,
 				55474AE32412EA4600E7FC24 /* ContentView.swift in Sources */,
+				55D3BD6624566EC9003030F0 /* Shop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,7 +492,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55D3BD6B24566ED6003030F0 /* Restaurant.swift in Sources */,
+				55D3BD6724566EC9003030F0 /* Shop.swift in Sources */,
 				55474AF62412EA4700E7FC24 /* iPark_AdminTests.swift in Sources */,
+				55D3BD6424566EC9003030F0 /* Ride.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,7 +503,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55D3BD6C24566ED6003030F0 /* Restaurant.swift in Sources */,
+				55D3BD6824566EC9003030F0 /* Shop.swift in Sources */,
 				55474B012412EA4700E7FC24 /* iPark_AdminUITests.swift in Sources */,
+				55D3BD6524566EC9003030F0 /* Ride.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,7 +653,7 @@
 		};
 		55474B062412EA4700E7FC24 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B975227AE8C92C64237FCF75 /* Pods-iPark-Admin.debug.xcconfig */;
+			baseConfigurationReference = 5EF8FBC3D347E3C2AE93E445 /* Pods-iPark-Admin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -628,7 +673,7 @@
 		};
 		55474B072412EA4700E7FC24 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F846B3925FB796D6155E48E /* Pods-iPark-Admin.release.xcconfig */;
+			baseConfigurationReference = 84BCCC09CE57372AD2B2FF1A /* Pods-iPark-Admin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -648,7 +693,7 @@
 		};
 		55474B092412EA4700E7FC24 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F0DC2400682038F5298BC1D /* Pods-iPark-AdminTests.debug.xcconfig */;
+			baseConfigurationReference = 18D508B27D7C12DF7572DE03 /* Pods-iPark-AdminTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -670,7 +715,7 @@
 		};
 		55474B0A2412EA4700E7FC24 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C51B6513B5D18BBC1E0E9C6 /* Pods-iPark-AdminTests.release.xcconfig */;
+			baseConfigurationReference = D52122BF823F3E4B69058BC8 /* Pods-iPark-AdminTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -692,7 +737,7 @@
 		};
 		55474B0C2412EA4700E7FC24 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E58B5D1692E0C56EB1FBD18E /* Pods-iPark-Admin-iPark-AdminUITests.debug.xcconfig */;
+			baseConfigurationReference = 2D4E0085BC22FA15E6147729 /* Pods-iPark-Admin-iPark-AdminUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -712,7 +757,7 @@
 		};
 		55474B0D2412EA4700E7FC24 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7049F8E2EE1657BF02F7DF3 /* Pods-iPark-Admin-iPark-AdminUITests.release.xcconfig */;
+			baseConfigurationReference = 8B370EE946C16A426B9F26D0 /* Pods-iPark-Admin-iPark-AdminUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

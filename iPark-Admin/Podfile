@@ -6,7 +6,6 @@ target 'iPark-Admin' do
   use_frameworks!
 
   # Pods for iPark-Admin
-
 pod 'Firebase/Auth'
 pod 'Firebase/Analytics'
 pod 'Firebase/Database'
