@@ -23,6 +23,9 @@
 		55A20FAF245B4FF40057AB30 /* FirebaseCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A20FAE245B4FF40057AB30 /* FirebaseCollection.swift */; };
 		55A20FB3245B52350057AB30 /* ListofShops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A20FB2245B52350057AB30 /* ListofShops.swift */; };
 		55A20FB9245B561B0057AB30 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 55A20FB8245B561B0057AB30 /* .gitignore */; };
+		55A20FBB245B79FC0057AB30 /* ShopDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A20FBA245B79FC0057AB30 /* ShopDetailView.swift */; };
+		55A20FBD245B9FA10057AB30 /* AddPizzeriaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A20FBC245B9FA10057AB30 /* AddPizzeriaView.swift */; };
+		55A20FBF245BCE100057AB30 /* RestaurantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A20FBE245BCE100057AB30 /* RestaurantsView.swift */; };
 		55D3BD6324566EC9003030F0 /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D3BD6124566EC9003030F0 /* Ride.swift */; };
 		55D3BD6424566EC9003030F0 /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D3BD6124566EC9003030F0 /* Ride.swift */; };
 		55D3BD6524566EC9003030F0 /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D3BD6124566EC9003030F0 /* Ride.swift */; };
@@ -76,6 +79,9 @@
 		55A20FAE245B4FF40057AB30 /* FirebaseCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCollection.swift; sourceTree = "<group>"; };
 		55A20FB2245B52350057AB30 /* ListofShops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListofShops.swift; sourceTree = SOURCE_ROOT; };
 		55A20FB8245B561B0057AB30 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		55A20FBA245B79FC0057AB30 /* ShopDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShopDetailView.swift; path = "iPark-Admin/ShopDetailView.swift"; sourceTree = SOURCE_ROOT; };
+		55A20FBC245B9FA10057AB30 /* AddPizzeriaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddPizzeriaView.swift; path = "iPark-Admin/AddPizzeriaView.swift"; sourceTree = SOURCE_ROOT; };
+		55A20FBE245BCE100057AB30 /* RestaurantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RestaurantsView.swift; path = "iPark-Admin/RestaurantsView.swift"; sourceTree = SOURCE_ROOT; };
 		55D3BD6124566EC9003030F0 /* Ride.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
 		55D3BD6224566EC9003030F0 /* Shop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		55D3BD6924566ED6003030F0 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
@@ -197,6 +203,9 @@
 			isa = PBXGroup;
 			children = (
 				55A20FB2245B52350057AB30 /* ListofShops.swift */,
+				55A20FBA245B79FC0057AB30 /* ShopDetailView.swift */,
+				55A20FBC245B9FA10057AB30 /* AddPizzeriaView.swift */,
+				55A20FBE245BCE100057AB30 /* RestaurantsView.swift */,
 			);
 			name = Views;
 			path = Models/Views;
@@ -477,10 +486,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				55474B162412EF5F00E7FC24 /* HomeImage.swift in Sources */,
+				55A20FBB245B79FC0057AB30 /* ShopDetailView.swift in Sources */,
+				55A20FBD245B9FA10057AB30 /* AddPizzeriaView.swift in Sources */,
 				55474ADF2412EA4600E7FC24 /* AppDelegate.swift in Sources */,
 				55A20FB3245B52350057AB30 /* ListofShops.swift in Sources */,
 				55D3BD6324566EC9003030F0 /* Ride.swift in Sources */,
 				55A20FAF245B4FF40057AB30 /* FirebaseCollection.swift in Sources */,
+				55A20FBF245BCE100057AB30 /* RestaurantsView.swift in Sources */,
 				55474AE12412EA4600E7FC24 /* SceneDelegate.swift in Sources */,
 				55D3BD6A24566ED6003030F0 /* Restaurant.swift in Sources */,
 				55474AE32412EA4600E7FC24 /* ContentView.swift in Sources */,
