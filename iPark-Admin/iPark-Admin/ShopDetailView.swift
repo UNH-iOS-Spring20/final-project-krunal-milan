@@ -9,28 +9,31 @@
 import SwiftUI
 
 struct ShopDetailView: View {
-    let shop:Shop
+    @ObservedObject var shop:Shop
+    
     var body: some View {
-        VStack(alignment:.leading){
-            Text(shop.Name).font(.largeTitle)
-            
+        VStack{
                 HStack{
-                    Text("Location: ")
+                    
                     Text(shop.Location)
-                }
-                HStack{
-                    Text("Category: ")
                     Text(shop.Category)
+                    Spacer()
                 }
-           
-
+                NavigationLink(destination: EditShopView(shop:shop)){
+                    Text("Edit")
+                }
+            Spacer()
         }
-
+//        padding()
+//        .navigationBarTitle(shop.Name)
     }
 }
 
 struct ShopDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ShopDetailView(shop:Shop(id:"1", Name: "Milan", Location:"NH", Category: "$$$$"))
+        ShopDetailView(shop:
+            Shop(id:"1", data: ["Name" : "H&M",
+                                "Location" : "NH",
+                                "Category" : "$$$$" ])!)
     }
 }

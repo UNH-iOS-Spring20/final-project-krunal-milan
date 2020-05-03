@@ -8,39 +8,35 @@
 
 import SwiftUI
 import FirebaseFirestore
-let query1 = Firestore.firestore().collection("Restaurants")
+let restaurantCollectionRef = Firestore.firestore().collection("Restaurants")
 struct RestaurantsView: View {
-    @ObservedObject private var restaurants = FirebaseCollection<Restaurant>(query: query1)
+    @ObservedObject private var restaurants = FirebaseCollection<Restaurant>(collectionRef: restaurantCollectionRef)
     var body: some View {
         NavigationView{
             VStack{
 
-            NavigationLink(destination: AddPizzeriaView()){
-                Text("Add Pizzeria")
+            NavigationLink(destination: AddShopsView()){
+                Text("Add Restaurant")
             }
            
                 List{
                     ForEach(restaurants.items){
                         restaurant in
-                       
+                        NavigationLink(destination: RestaurantDetailView(restaurant: restaurant)){
                             Text(restaurant.Name)
-                         Text(restaurant.Location)
-                         Text(restaurant.Category)
-                         Text(restaurant.Phone)
-                         Text(restaurant.Cuisine)
-                        
-                    }.onDelete(perform: removeShop)
+                        }
+                    }.onDelete(perform: removeRestaurant)
                         
                 }
         }
-            .navigationBarTitle(Text("Shops"), displayMode: .inline)
+            .navigationBarTitle(Text("Restaurant"), displayMode: .inline)
             .navigationBarItems(leading: EditButton())
             Spacer()
 
         }
     }
-    func removeShop(at offsets: IndexSet){
-        restaurants.deleteItem(index: offsets.first!)
+    func removeRestaurant(at offsets: IndexSet){
+        //restaurants.deleteItem(index: offsets.first!)
     }
 }
 

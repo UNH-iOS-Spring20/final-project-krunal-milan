@@ -11,14 +11,14 @@ import FirebaseFirestore
 //let query = Firestore.firestore().collection("Shops")
 
 
-
+let shopListCollectionRef = Firestore.firestore().collection("Shops")
 struct ListofShops: View {
-    @ObservedObject private var shops = FirebaseCollection<Shop>(query: query)
+    @ObservedObject private var shops = FirebaseCollection<Shop>(collectionRef: shopListCollectionRef)
     var body: some View {
         NavigationView{
-            NavigationLink(destination: AddPizzeriaView()){
-                Text("Add Pizzeria")
-            }
+            NavigationLink(destination: AddShopsView()){
+                Text("Add Shops")
+                }
             VStack{
                 List{
                     ForEach(shops.items){
@@ -37,7 +37,7 @@ struct ListofShops: View {
         }
     }
     func removeShop(at offsets: IndexSet){
-        shops.deleteItem(index: offsets.first!)
+        //shops.deleteItem(index: offsets.first!)
     }
 }
 

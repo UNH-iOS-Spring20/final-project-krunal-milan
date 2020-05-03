@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct AddPizzeriaView: View {
+struct AddShopsView: View {
     @Environment(\.presentationMode)var presentationMode
     @State private var Name:String = ""
     @State private var Location:String = ""
@@ -16,31 +16,36 @@ struct AddPizzeriaView: View {
 
     var body: some View {
         Group{
-            VStack{
+            VStack(spacing: 25){
                 HStack{
                     Text("Shop Name:")
                     TextField("Enter Name", text:$Name)
-                }.padding(15)
+                }
                 HStack{
                     Text("Shop Location:")
                     TextField("Enter Name", text:$Location)
-                }.padding(15)
+                }
                 HStack{
                     Text("Shop Category:")
                     TextField("Enter Category", text:$Category)
-                }.padding(15)
-                Button(action:{self.addPizzeria()}){
+                }
+                Button(action:{self.addShops()}){
                     Text("Submit")
                 }
+                Spacer()
             }
-        }    }
-    func addPizzeria(){
-        print("Adding Pizzeria")
+        .navigationBarTitle("Add Shops")
+        }
+    .padding()
+        
+    }
+    func addShops(){
+        print("Adding Shops")
         if !Name.isEmpty && !Location.isEmpty && !Category.isEmpty{
-            //TODO
+            let data = ["Name" : Name, "Location" : Location, "Category" : Category]
+            shopsCollectionRef.addDocument(data: data)
             dismiss()
         }
-        
     }
     
     func dismiss(){
@@ -48,8 +53,8 @@ struct AddPizzeriaView: View {
     }
 }
 
-struct AddPizzeriaView_Previews: PreviewProvider {
+struct AddShopsView_Previews: PreviewProvider {
     static var previews: some View {
-        AddPizzeriaView()
+        AddShopsView()
     }
 }

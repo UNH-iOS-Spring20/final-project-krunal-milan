@@ -8,24 +8,34 @@
 
 import FirebaseFirestore
 
-struct Shop: Identifiable {
-    var id: String
-    var Name: String
-    var Location: String
-    var Category: String
+class Shop: FirebaseCodable {
+    var id: String              //id will not visible to user
+    @Published var Name: String
+    @Published var Location: String
+    @Published var Category: String
     
-}
-
-extension Shop: DocumentSerializable{
-    init?(id: String, dictionary: [String : Any]){
-        guard let Name = dictionary["Name"] as? String,
-         let Location = dictionary["Location"] as? String,
-         let Category = dictionary["Category"] as? String
+    // declare new property of data which returns dictionary for all of the fields in object
+    var data: [String: Any] {
+        return [
+            "Name" : Name,
+            "Location" : Location,
+            "Category" : Category
+        ]
+    }
+    
+    required init?(id: String, data: [String : Any]){
+        guard let Name = data["Name"] as? String,
+            let Location = data["Location"] as? String,
+            let Category = data["Category"] as? String
             else{
                 return nil
         }
-        self.init(id:id, Name: Name, Location:Location, Category:Category )
+        self.id = id
+        self.Name = Name
+        self.Location = Location
+        self.Category = Category
     }
+    
 }
 
 

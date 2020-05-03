@@ -8,38 +8,32 @@
 
 import SwiftUI
 import FirebaseFirestore
-let query = Firestore.firestore().collection("Shops")
+let shopsCollectionRef = Firestore.firestore().collection("Shops")
 
 
 
 struct ContentView: View {
-    @ObservedObject private var shops = FirebaseCollection<Shop>(query: query)
+    @ObservedObject private var shops = FirebaseCollection<Shop>(collectionRef: shopsCollectionRef)
     var body: some View {
         NavigationView{
             VStack{
-
-            NavigationLink(destination: RestaurantsView()){
-                Text("Add Pizzeria")
-            }
-                List{
-                    ForEach(shops.items){
-                        shop in
-                        NavigationLink(destination: ShopDetailView(shop:shop)){
-                            Text(shop.Name)
-                        }
-                    }.onDelete(perform: removeShop)
-                        
+                
+                NavigationLink(destination: RestaurantsView()){
+                    Text("Restaurants")
                 }
-        }
-            .navigationBarTitle(Text("Shops"), displayMode: .inline)
+                
+                NavigationLink(destination: ShopsView()){
+                    Text("Shops")
+                }
+                
+            }
+            .navigationBarTitle(Text("Admin"), displayMode: .inline)
             .navigationBarItems(leading: EditButton())
             Spacer()
-
+            
         }
     }
-    func removeShop(at offsets: IndexSet){
-        shops.deleteItem(index: offsets.first!)
-    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
