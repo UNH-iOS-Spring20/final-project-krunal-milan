@@ -17,7 +17,7 @@ struct Restaurant: Identifiable {
     var Phone: String
  }
 
-extension Restaurant: DocumentSerializable{
+extension Restaurant: FirebaseCodable{
     init?(id: String, dictionary: [String : Any]){
         guard let Name = dictionary["Name"] as? String,
          let Location = dictionary["Location"] as? String,

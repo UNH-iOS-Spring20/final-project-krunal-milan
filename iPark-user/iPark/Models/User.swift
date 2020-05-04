@@ -8,9 +8,15 @@
 
 import FirebaseFirestore
 
-struct User: Identifiable {
-    var id: String
-    var FirstName: String
-    var LastName: String
-    var Email: String
+class User {
+    var uid: String
+    var displayName: String?
+    var email: String?
+    
+    
+    init(uid: String, displayName:String?, email:String?){
+        self.uid = uid
+        self.displayName = displayName
+        self.email = email
+    }
 }

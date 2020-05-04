@@ -10,43 +10,14 @@ import SwiftUI
 
 struct ContainerController: View {
     var body: some View {
-        NavigationView{
-        TabView{
-            Text("HomePage Goes Here")
-                .tabItem{
-                    Image(systemName: "house.fill")
-                    Text("Home")
-                    
-            }
-            Text("Tickets Goes Here")
-                .tabItem{
-                    Image(systemName: "house.fill")
-                    Text("Tickets")
-                    
-            }
-            UserPage()
-                .tabItem{
-                    Image(systemName: "person.crop.circle.fill")
-                    Text("My Info")
-                    
-            }
-            Text("iPark Info Goes Here")
-                .tabItem{
-                    Image(systemName: "info.circle.fill")
-                    Text("iPark Info")
-                    
-            }
-        }
-        .navigationBarTitle(Text("iPark").font(.system(.title, design: .serif)), displayMode: .inline)
-
-    }
-    }
-    
+UserPage()
     
 }
-
+}
+#if DEBUG
 struct ContainerController_Previews: PreviewProvider {
     static var previews: some View {
-        ContainerController()
+        ContainerController().environmentObject(SessionStore())
     }
 }
+#endif

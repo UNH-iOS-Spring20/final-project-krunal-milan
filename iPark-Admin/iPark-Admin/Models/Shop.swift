@@ -16,7 +16,7 @@ struct Shop: Identifiable {
     
 }
 
-extension Shop: DocumentSerializable{
+extension Shop: FirebaseCodable{
     init?(id: String, dictionary: [String : Any]){
         guard let Name = dictionary["Name"] as? String,
          let Location = dictionary["Location"] as? String,

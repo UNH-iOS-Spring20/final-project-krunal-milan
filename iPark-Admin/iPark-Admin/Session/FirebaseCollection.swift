@@ -9,19 +9,17 @@
 
 import FirebaseFirestore
 
-protocol  DocumentSerializable {
-    init?(id: String, dictionary:[String:Any])
+protocol  FirebaseCodable {
+    init?(id: String, data:[String:Any])
 }
 
 
-class FirebaseCollection<T : DocumentSerializable>: ObservableObject{
+class FirebaseCollection<T : FirebaseCodable>: ObservableObject{
     @Published private(set) var items: [T]
-    let query: Query
     
-    init(query: Query){
+    init(collectionRef: CollectionReference){
         self.items = []
-        self.query = query
-        listenforChanges()
+        listenforChanges(collectionRef: CollectionRef)
     }
     
     func listenforChanges(){
