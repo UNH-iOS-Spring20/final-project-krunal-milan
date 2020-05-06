@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct Summary: View {
+    @EnvironmentObject var session: SessionStore
     @ObservedObject var ticket = Tickets()
     @State public var adultquantity: Int
     @State public var childrenquantity: Int
@@ -18,6 +19,7 @@ struct Summary: View {
     @State public var typeofticketselector: Int
     @State public var dateofentry: Date
     @State public var isBooked: Bool = false
+    @State public var useremail: String = ""
 
     static let taskDateFormat: DateFormatter = {
         let formatter = DateFormatter()
@@ -39,14 +41,14 @@ struct Summary: View {
     var body: some View {
         Group{
         if(isBooked == false){
-        NavigationView{
+       
             VStack{
                 Spacer().frame(height: 40)
 
             VStack{
                 HStack{
                     Text("Type of Ticket: ").padding(10)
-                    Text("\(typeoftickets[typeofticketselector])").padding(10)
+                    Text("\(typeoftickets[0])").padding(10)
                 }
                 HStack{
                     Text("Number of Tickets: \(adultquantity + childrenquantity)").padding(1)
@@ -62,9 +64,23 @@ struct Summary: View {
                     Text("\(dateofentry, formatter: Self.taskDateFormat)").padding(10)
                 }
                 
-            }
-            Spacer().frame(height:80)
-            
+                }
+                if(session.session != nil){
+                    Text("Your Email Address: \(session.email1)").font(.system(size: 14))
+                        .padding(12)
+                        .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color(.gray),
+                                                                                   
+                                                                                   lineWidth: 1)).padding(.horizontal, 35)
+                    
+                }
+                else{
+                    TextField("Enter your email address", text: $useremail)
+                        .font(.system(size: 14))
+                        .padding(12)
+                        .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color(.gray),
+                                                                                   lineWidth: 1)).padding(.horizontal, 35)
+                }
+                
             VStack{
                
                 Spacer().frame(height: 40)
@@ -91,12 +107,23 @@ struct Summary: View {
 
  
                 Button(action:{
+                    if(self.session.session == nil){
                     createTicket(
+                        useremail: self.useremail,
                         typeofticket: self.typeoftickets[self.typeofticketselector],
                         dateofticket: self.dateofentry,
                         numberoftickets:self.adultquantity + self.childrenquantity ,
                         total:(((self.adultquantity * self.adultprice) + (self.childrenprice + self.childrenquantity))*11/10)
                     )
+                    }else{
+                        createTicket(
+                            useremail: self.session.email1,
+                            typeofticket: self.typeoftickets[self.typeofticketselector],
+                            dateofticket: self.dateofentry,
+                            numberoftickets:self.adultquantity + self.childrenquantity ,
+                            total:(((self.adultquantity * self.adultprice) + (self.childrenprice + self.childrenquantity))*11/10)
+                        )
+                    }
                     self.isBooked = true
                 }){
                     
@@ -114,14 +141,13 @@ struct Summary: View {
         }
             .navigationBarTitle("Review Summary", displayMode: .inline)
 
-        }
+        
             
             
             ///------ If Booking is Completed --------///
             
             
         }else{
-            NavigationView{
                 VStack{
                     Text("Your Booking Details").padding(15)
                     Spacer().frame(height: 40)
@@ -147,7 +173,7 @@ struct Summary: View {
                 }
                 .navigationBarTitle("Booking Completed!")
             }
-            }
+            
             
         }
     }

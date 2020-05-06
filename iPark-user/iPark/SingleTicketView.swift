@@ -27,18 +27,20 @@ struct SingleTicketView: View{
         VStack{
 
         HStack{
-                       Image("homeimage").resizable().frame(width: 250, height: 150  )
+            Image("homeimage").resizable().frame(width: 250, height: 150  ).padding(10)
             VStack{
                        Text("Single Entry Ticket").padding(10)
                 Spacer()
+                    VStack{
                 Text("Adult: $\(ticket.adultprice)").font(.system(size:14))
                 Text("Children: $\(ticket.childrenprice)").font(.system(size:14))
+                    }.padding(.vertical, 10)
             }
 
                 
                    }.padding(0).background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color(.gray),
                                                                                            lineWidth: 1)).padding(.horizontal, 10).frame(width: 450, height: 170)
-            Spacer().frame(height: 50)
+            Spacer().frame(height: 30)
         VStack{
            
             Text("Pick A Date")
@@ -60,14 +62,12 @@ struct SingleTicketView: View{
             }.padding(.horizontal, 40)
 
             
-         
-            Spacer().frame(height: 20)
-
            
             NavigationLink(destination: Summary( adultquantity: ticket.adultquantity,
                                                 childrenquantity: ticket.childrenquantity, adultprice: ticket.adultprice,
                                                 childrenprice: ticket.childrenprice, typeoftickets: ticket.typeoftickets,
-                                                typeofticketselector: ticket.typeofticketselector, dateofentry: ticket.dateofentry)){
+                                                typeofticketselector: ticket.typeofticketselector, dateofentry: ticket.dateofentry))
+            {
                            
                                         
                             Text("Proceed to Checkout")

@@ -7,14 +7,21 @@
 //
 
 import SwiftUI
+import FirebaseFirestore
+let query3 = Firestore.firestore().collection("Users")
+
 struct SignInView: View{
+    @ObservedObject private var userdetails = FirebaseCollection<UserDetails>(query: query3)
+    
     @State var email: String = ""
     @State var password: String = ""
     @State var error: String = ""
     @EnvironmentObject var session: SessionStore
 
     
+    
     func signIn(){
+        session.email1 = email
         session.signIn(email: email, password: password) { (result, error) in
             if let error = error{
                 self.error = error.localizedDescription
@@ -65,7 +72,7 @@ struct SignInView: View{
                 .padding()
                 
             }
-            Spacer().frame(height: 180)
+            Spacer().frame(height: 10)
             
             NavigationLink(destination: signUpView()){
                 HStack{
@@ -78,6 +85,7 @@ struct SignInView: View{
                         .foregroundColor(.blue)
                 }
             }
+            Spacer()
         }
 
         .padding(.horizontal, 32)
@@ -87,23 +95,36 @@ struct SignInView: View{
 struct signUpView: View{
     @State var email:  String = ""
     @State var password:  String = ""
+    @State var firstname:  String = ""
+    @State var lastname:  String = ""
+
    
     @State var error:  String = ""
     @EnvironmentObject var session: SessionStore
     
     func signUp(){
+        session.email1 = email
+
         session.signUp(email: email, password: password) {(result, error) in
             if let error = error {
                 self.error = error.localizedDescription
             }else{
+                
+                self.addNewUser()
+                
                 self.email = ""
                 self.password = ""
-               
+                
             }
         }
     }
-
-    var body: some View{
+    
+    func addNewUser(){
+           session.addNewUser(firstname: firstname, lastname: lastname, useremail: email)
+           
+       }
+    
+       var body: some View{
         VStack{
         Text("Create Account")
             .font(.system(size: 32, weight: .heavy))
@@ -113,23 +134,36 @@ struct signUpView: View{
                 .foregroundColor(.gray)
             
             VStack(spacing: 18){
+                TextField("First Name", text:$firstname)
+                    .font(.system(size: 14))
+                    .padding(12)
+                    .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color(.gray),
+                                                                               lineWidth: 1))
+                TextField("Last Name", text:$lastname)
+                    .font(.system(size: 14))
+                    .padding(12)
+                    .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color(.gray),
+                                                                               lineWidth: 1))
                 TextField("Email Address", text:$email)
                     .font(.system(size: 14))
                     .padding(12)
                     .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color(.gray),
                                                                                lineWidth: 1))
-               
+                
                 SecureField("Password", text:$password)
                     .font(.system(size: 14))
                     .padding(12)
                     .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color(.gray),
                                                                                lineWidth: 1))
             }
+                
+                
+            .padding(.vertical, 64)
             
-        
-        .padding(.vertical, 64)
-        
-        Button(action: signUp){
+            Button(action: {
+                self.signUp()
+               
+            }){
             Text("Create Account")
                 .frame(minWidth: 0, maxWidth: .infinity)
                 .frame(height: 50)

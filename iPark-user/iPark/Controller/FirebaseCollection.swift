@@ -9,11 +9,12 @@
 import FirebaseFirestore
 
 protocol  DocumentSerializable {
-    init?(id: String, dictionary:[String:Any])
+    init?(id: String, dictionary:[String:Any])
 }
 
 
 class FirebaseCollection<T : DocumentSerializable>: ObservableObject{
+    
     @Published private(set) var items: [T]
     let query: Query
     
@@ -42,3 +43,4 @@ class FirebaseCollection<T : DocumentSerializable>: ObservableObject{
 }
     
 
+    

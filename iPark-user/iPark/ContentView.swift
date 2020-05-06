@@ -7,47 +7,88 @@
 //
 
 import SwiftUI
+import FirebaseFirestore
+let query2 = Firestore.firestore().collection("Users")
+
 
 struct ContentView: View {
     @EnvironmentObject var session: SessionStore
+   @ObservedObject public var userdetails = FirebaseCollection<UserDetails>(query: query2)
     
+
    func getUser(){
         session.listen()
+    
+    
     }
     
     var body: some View {
-        NavigationView{
+        
+        
         TabView{
             
-            Text("Homepage Goes here")
+            Homepage()
                 .tabItem {
                     Image(systemName: "house.fill")
                     Text("Home")
             }
-            TicketsView()
-                          .tabItem {
-                              Image(systemName: "square.and.pencil")
-                              Text("Buy Tickets")
-                      }
-          
+            NavigationView{
+                TicketsView()
+                    .navigationBarTitle("Buy Tickets")
+            }
+            .tabItem {
+                Image(systemName: "square.and.pencil")
+                Text("Buy Tickets")
+            }
+            
             
             Group{
                 if(session.session != nil){
-                    VStack{
-                        Text("Hello User, You are signed In!")
-                        Spacer().frame(height: 180)
-                        Section{
-                        Button(action: session.signOut){
-                            HStack{
-                                Image(systemName: "person.crop.circle.fill.badge.minus")
-                            Text("Sign Out")                     }.font(.system(size: 18))   .foregroundColor(.red)
+                    NavigationView{
+                        VStack(alignment: .leading){
+                            Spacer().frame(height:60)
+
+                            ForEach(userdetails.items){
+                                restaurant in
+                                if(restaurant.Email == self.session.email1){
+                                  
+                                        HStack{
+                                            Image(systemName: "person.fill")
+                                            Text("\(restaurant.FirstName) \(restaurant.LastName)")
+                                        }.font(.system(size:25, weight:.semibold))
+                                        HStack{
+                                            Spacer().frame(width: 30)
+                                            Text("\(restaurant.Email)")
+                                            
+                                        }.font(.system(size:15, weight:.light))
+                                  
+
+                                    Spacer().frame(height:70)
+                                    
+                                   UserTickets()
+                                    
+                                }
+                                
+                                
                             }
                             
-                        }
+                            
+
+                       
+                    
+
+                    
+                        }.padding(.horizontal, 15)
+                        .navigationBarItems(trailing: Button(action: {self.session.signOut()}){
+                            Text("Logout")
+                        })
+                    .navigationBarTitle("My Profile")
                     }
                 }else{
                     AuthView()
                 }
+                    
+                
             }.onAppear(perform:getUser)
                 
             .tabItem {
@@ -60,15 +101,14 @@ struct ContentView: View {
                                         Image(systemName: "info.circle.fill")
                                         Text("iPark Info")
                                 }
-            
+
             }
-        .navigationBarTitle("iPark", displayMode: .inline)
         }
         
         
     }
     
-}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

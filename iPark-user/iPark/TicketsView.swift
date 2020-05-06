@@ -9,7 +9,12 @@
 import SwiftUI
 
 
+
+
 struct TicketsView: View {
+    @EnvironmentObject var session: SessionStore
+    @ObservedObject public var passes = FirebaseCollection<Pass>(query: query5)
+    @State var ary: Array = []
     @ObservedObject var type = Tickets()
     var body: some View {
         VStack(alignment: .leading) {
@@ -21,12 +26,13 @@ struct TicketsView: View {
             Spacer().frame(height: 30)
             if(type.typeofticketselector == 0){
                 SingleTicketView()
-        }
+            }
             if(type.typeofticketselector == 1){
                 YearlyPassView()
-
             }
-        }    }
+        }
+        
+    }
 }
 
 struct TicketsView_Previews: PreviewProvider {
