@@ -19,8 +19,14 @@ struct ShopsDetailsView: View {
 
             Circleimage(image: Image("Shop\(shop.Photo)"))
             Spacer().frame(height: 100)
-           Text("Location: \(shop.Location)").font(.system(size:25, weight:.medium))
-           Text("Price Category: \(shop.Category)").font(.system(size:25, weight:.medium))
+            HStack{
+           Text("Location:").font(.system(size:25, weight:.medium))
+           Text(" \(shop.Location)").font(.system(size:20, weight:.light))
+            }
+            HStack{
+           Text("Category:").font(.system(size:25, weight:.medium))
+            Text(" \(shop.Category)").font(.system(size:20, weight:.light))
+            }
             
              Spacer()
             }

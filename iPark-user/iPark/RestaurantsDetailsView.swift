@@ -22,12 +22,20 @@ struct RestaurantsDetailsView: View {
             
              Circleimage(image: Image("Shop\(restaurant.Photo)"))
             Spacer().frame(height: 50)
-
-            Text("Location: \(restaurant.Location)").font(.system(size:15, weight:.medium))
-            Text("Price Category: \(restaurant.Category)").font(.system(size:15, weight:.medium))
-            Text("Contact: \(restaurant.Phone)").font(.system(size:15, weight:.medium))
+            HStack{
+                Text("Location:").font(.system(size:20, weight:.medium))
+                Text(" \(restaurant.Location)").font(.system(size:15, weight:.light))
+            }
+            HStack{
+                Text("Price Category:").font(.system(size:20, weight:.medium))
+                Text(" \(restaurant.Category)").font(.system(size:15, weight:.light))
+            }
+            HStack{
+                Text("Contact:").font(.system(size:20, weight:.medium))
+                Text(" \(restaurant.Phone)").font(.system(size:15, weight:.light))
+            }
             
-            Spacer().frame(height: 50)
+            Spacer().frame(height: 20)
             
             NavigationLink(destination: MenuItems(restaurant: restaurant)){
                 Text("View Menu")
@@ -39,8 +47,6 @@ struct RestaurantsDetailsView: View {
                     ))
                     .cornerRadius(5)
             }
-            
-            
         }
     }
 }

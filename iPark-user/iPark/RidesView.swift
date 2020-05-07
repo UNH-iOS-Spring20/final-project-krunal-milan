@@ -18,7 +18,10 @@ struct RidesView: View {
                 ForEach(rides.items){
                     ride in
                     NavigationLink(destination: RidesDetailsView(ride: ride)){
-                        Text("\(ride.Name)")
+                    HStack{
+                        Text("\(ride.Name)").padding(10)
+                        Spacer()
+                        IconImage(image: Image("Ride\(ride.Photo)"))
                     }
                 }
             }
@@ -26,7 +29,7 @@ struct RidesView: View {
    
     }
 }
-
+}
 struct RidesView_Previews: PreviewProvider {
     static var previews: some View {
         RidesView()

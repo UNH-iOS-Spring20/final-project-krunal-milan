@@ -14,13 +14,15 @@ class Ride: FirebaseCodable {
     @Published var Location: String
     @Published var Price: String
     @Published var Age_Group: String
+    @Published var Photo: String
     
     var data:[String: Any]{
         return[
             "Name": Name,
             "Location": Location,
             "Price": Price,
-            "Age_Group":Age_Group
+            "Age_Group":Age_Group,
+            "Photo":Photo
             
         ]
         
@@ -31,7 +33,8 @@ class Ride: FirebaseCodable {
         guard let Name = data["Name"] as? String,
             let Location = data["Location"] as? String,
             let Price = data["Price"] as? String,
-            let Age_Group = data["Age_Group"] as? String
+            let Age_Group = data["Age_Group"] as? String,
+            let Photo = data["Photo"] as? String
             else{
                 return nil
         }
@@ -42,6 +45,7 @@ class Ride: FirebaseCodable {
         self.Location = Location
         self.Price = Price
         self.Age_Group = Age_Group
+        self.Photo = Photo
         
     }
 }

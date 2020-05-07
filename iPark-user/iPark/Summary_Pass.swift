@@ -74,16 +74,16 @@ struct Summary_Pass: View {
                    HStack{
                        Text("Subtotal:                     ")
 
-                       Text("\((childrenquantity * childrenpassprice) + (adultquantity * adultpassprice)) USD")
+                       Text("\(adultquantity * adultpassprice) USD")
                    }.padding(20)
                    HStack{
                        Text("Taxes and Fees:            ")
 
-                       Text("\(((adultquantity * adultpassprice) + (childrenpassprice + childrenquantity))*1/10) USD")
+                       Text("\(((adultquantity * adultpassprice))/10) USD")
                    }.padding(20)
                    HStack{
                        Text("Total:                            ")
-                       Text("\(((adultquantity * adultpassprice) + (childrenpassprice + childrenquantity))*11/10) USD")
+                       Text("\((adultquantity * adultpassprice)*11/10) USD")
                    }.padding(20)
                    Spacer().frame(height: 30)
 
