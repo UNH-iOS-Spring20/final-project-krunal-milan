@@ -15,7 +15,6 @@
 		552B2245246078E8008EEA7F /* park.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 552B2244246078E8008EEA7F /* park.jpg */; };
 		552B22492460AACC008EEA7F /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552B22482460AACC008EEA7F /* UserDetails.swift */; };
 		5543F30824586EFC000AE9F0 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5543F30724586EFC000AE9F0 /* Login.swift */; };
-		5543F30A2458789C000AE9F0 /* FirebaseSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5543F3092458789C000AE9F0 /* FirebaseSession.swift */; };
 		5543F30D245878D1000AE9F0 /* FirebaseCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5543F30C245878D1000AE9F0 /* FirebaseCollection.swift */; };
 		556477572460B4B000300FD2 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556477562460B4B000300FD2 /* Ticket.swift */; };
 		556477592460B69000300FD2 /* UserTickets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556477582460B69000300FD2 /* UserTickets.swift */; };
@@ -32,6 +31,18 @@
 		55E9D23D24620F75006F115E /* Pass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E9D23C24620F75006F115E /* Pass.swift */; };
 		55E9D2412462528A006F115E /* UserPassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E9D2402462528A006F115E /* UserPassView.swift */; };
 		55E9D2432462765F006F115E /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E9D2422462765F006F115E /* Homepage.swift */; };
+		55E9D245246342DC006F115E /* InfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E9D244246342DC006F115E /* InfoPage.swift */; };
+		55E9D24724634D1F006F115E /* ShopsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E9D24624634D1F006F115E /* ShopsView.swift */; };
+		55E9D24924634F52006F115E /* RestaurantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E9D24824634F52006F115E /* RestaurantsView.swift */; };
+		55E9D24B24634F68006F115E /* RidesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E9D24A24634F68006F115E /* RidesView.swift */; };
+		55E9D24D2463546E006F115E /* RestaurantsDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E9D24C2463546E006F115E /* RestaurantsDetailsView.swift */; };
+		55E9D24F24635D3C006F115E /* ShopsDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E9D24E24635D3C006F115E /* ShopsDetailsView.swift */; };
+		55E9D25124635E32006F115E /* RidesDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E9D25024635E32006F115E /* RidesDetailsView.swift */; };
+		55E9D2532463690A006F115E /* ShopItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E9D2522463690A006F115E /* ShopItem.swift */; };
+		55E9D25524636A9A006F115E /* ShopItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E9D25424636A9A006F115E /* ShopItemsView.swift */; };
+		55E9D25924636B78006F115E /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E9D25824636B78006F115E /* MenuItem.swift */; };
+		55E9D25B2463781D006F115E /* MenuItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E9D25A2463781D006F115E /* MenuItems.swift */; };
+		55E9D25D2463BD59006F115E /* IconImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E9D25C2463BD59006F115E /* IconImage.swift */; };
 		55F36B8E2458D5630083E3FE /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F36B8B2458D5630083E3FE /* Shop.swift */; };
 		55F36B8F2458D5630083E3FE /* Ride.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F36B8C2458D5630083E3FE /* Ride.swift */; };
 		55F36B902458D5630083E3FE /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F36B8D2458D5630083E3FE /* Restaurant.swift */; };
@@ -92,7 +103,6 @@
 		552B2244246078E8008EEA7F /* park.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = park.jpg; sourceTree = "<group>"; };
 		552B22482460AACC008EEA7F /* UserDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
 		5543F30724586EFC000AE9F0 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
-		5543F3092458789C000AE9F0 /* FirebaseSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirebaseSession.swift; path = "../../../iPark-Admin/iPark-Admin/Session/FirebaseSession.swift"; sourceTree = "<group>"; };
 		5543F30C245878D1000AE9F0 /* FirebaseCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseCollection.swift; sourceTree = "<group>"; };
 		556477562460B4B000300FD2 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
 		556477582460B69000300FD2 /* UserTickets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTickets.swift; sourceTree = "<group>"; };
@@ -111,6 +121,18 @@
 		55E9D23C24620F75006F115E /* Pass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pass.swift; sourceTree = "<group>"; };
 		55E9D2402462528A006F115E /* UserPassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPassView.swift; sourceTree = "<group>"; };
 		55E9D2422462765F006F115E /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
+		55E9D244246342DC006F115E /* InfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPage.swift; sourceTree = "<group>"; };
+		55E9D24624634D1F006F115E /* ShopsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsView.swift; sourceTree = "<group>"; };
+		55E9D24824634F52006F115E /* RestaurantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsView.swift; sourceTree = "<group>"; };
+		55E9D24A24634F68006F115E /* RidesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesView.swift; sourceTree = "<group>"; };
+		55E9D24C2463546E006F115E /* RestaurantsDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsDetailsView.swift; sourceTree = "<group>"; };
+		55E9D24E24635D3C006F115E /* ShopsDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsDetailsView.swift; sourceTree = "<group>"; };
+		55E9D25024635E32006F115E /* RidesDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RidesDetailsView.swift; sourceTree = "<group>"; };
+		55E9D2522463690A006F115E /* ShopItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItem.swift; sourceTree = "<group>"; };
+		55E9D25424636A9A006F115E /* ShopItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopItemsView.swift; sourceTree = "<group>"; };
+		55E9D25824636B78006F115E /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		55E9D25A2463781D006F115E /* MenuItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItems.swift; sourceTree = "<group>"; };
+		55E9D25C2463BD59006F115E /* IconImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconImage.swift; sourceTree = "<group>"; };
 		55F36B8B2458D5630083E3FE /* Shop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		55F36B8C2458D5630083E3FE /* Ride.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ride.swift; sourceTree = "<group>"; };
 		55F36B8D2458D5630083E3FE /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
@@ -213,7 +235,6 @@
 		5543F30B245878A7000AE9F0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				5543F3092458789C000AE9F0 /* FirebaseSession.swift */,
 				55C2F29C245DF50200F3214A /* SessionStore.swift */,
 				5543F30C245878D1000AE9F0 /* FirebaseCollection.swift */,
 				552B223E245F40FE008EEA7F /* Tickets.swift */,
@@ -248,6 +269,8 @@
 				556477562460B4B000300FD2 /* Ticket.swift */,
 				55E9D23C24620F75006F115E /* Pass.swift */,
 				55F36B8B2458D5630083E3FE /* Shop.swift */,
+				55E9D2522463690A006F115E /* ShopItem.swift */,
+				55E9D25824636B78006F115E /* MenuItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -316,7 +339,16 @@
 				55E9D2382461E80D006F115E /* UserTicketView.swift */,
 				55E9D2402462528A006F115E /* UserPassView.swift */,
 				55E9D2422462765F006F115E /* Homepage.swift */,
+				55E9D24824634F52006F115E /* RestaurantsView.swift */,
+				55E9D25A2463781D006F115E /* MenuItems.swift */,
+				55E9D24624634D1F006F115E /* ShopsView.swift */,
 				55C2F2A0245DF54B00F3214A /* AuthView.swift */,
+				55E9D24C2463546E006F115E /* RestaurantsDetailsView.swift */,
+				55E9D24A24634F68006F115E /* RidesView.swift */,
+				55E9D25024635E32006F115E /* RidesDetailsView.swift */,
+				55E9D244246342DC006F115E /* InfoPage.swift */,
+				55E9D24E24635D3C006F115E /* ShopsDetailsView.swift */,
+				55E9D25424636A9A006F115E /* ShopItemsView.swift */,
 				556477582460B69000300FD2 /* UserTickets.swift */,
 				55D662D72460D6D10082BCBB /* GoogleService-Info.plist */,
 				55C2F2A6245E070C00F3214A /* YearlyPassView.swift */,
@@ -328,6 +360,7 @@
 				931E902823FDD19000964A58 /* Info.plist */,
 				931E902223FDD19000964A58 /* Preview Content */,
 				55095F15241164D600A7EB8A /* Circleimage.swift */,
+				55E9D25C2463BD59006F115E /* IconImage.swift */,
 			);
 			path = iPark;
 			sourceTree = "<group>";
@@ -676,32 +709,43 @@
 			buildActionMask = 2147483647;
 			files = (
 				55C2F2A3245E02BD00F3214A /* TicketsView.swift in Sources */,
+				55E9D25524636A9A006F115E /* ShopItemsView.swift in Sources */,
 				55F36B902458D5630083E3FE /* Restaurant.swift in Sources */,
 				5543F30824586EFC000AE9F0 /* Login.swift in Sources */,
 				55095F16241164D600A7EB8A /* Circleimage.swift in Sources */,
 				55E9D23D24620F75006F115E /* Pass.swift in Sources */,
+				55E9D25124635E32006F115E /* RidesDetailsView.swift in Sources */,
 				55E9D23B24620228006F115E /* Summary_Pass.swift in Sources */,
 				55F36BA124591F8C0083E3FE /* UserPage.swift in Sources */,
+				55E9D24924634F52006F115E /* RestaurantsView.swift in Sources */,
+				55E9D24724634D1F006F115E /* ShopsView.swift in Sources */,
 				931E901B23FDD18900964A58 /* AppDelegate.swift in Sources */,
 				55F36B9B24590E700083E3FE /* MenuController.swift in Sources */,
 				556477592460B69000300FD2 /* UserTickets.swift in Sources */,
 				55C2F2A7245E070C00F3214A /* YearlyPassView.swift in Sources */,
 				55F36B8F2458D5630083E3FE /* Ride.swift in Sources */,
 				55E9D2432462765F006F115E /* Homepage.swift in Sources */,
+				55E9D25B2463781D006F115E /* MenuItems.swift in Sources */,
 				55C2F29F245DF53500F3214A /* ContentView.swift in Sources */,
 				55E9D2412462528A006F115E /* UserPassView.swift in Sources */,
+				55E9D25D2463BD59006F115E /* IconImage.swift in Sources */,
 				55C2F2A1245DF54C00F3214A /* AuthView.swift in Sources */,
+				55E9D24B24634F68006F115E /* RidesView.swift in Sources */,
 				5543F30D245878D1000AE9F0 /* FirebaseCollection.swift in Sources */,
+				55E9D24F24635D3C006F115E /* ShopsDetailsView.swift in Sources */,
+				55E9D2532463690A006F115E /* ShopItem.swift in Sources */,
 				552B22492460AACC008EEA7F /* UserDetails.swift in Sources */,
 				55F36B9F245917F00083E3FE /* SignUp.swift in Sources */,
 				552B223F245F40FE008EEA7F /* Tickets.swift in Sources */,
+				55E9D245246342DC006F115E /* InfoPage.swift in Sources */,
 				552B2241245F470F008EEA7F /* Summary.swift in Sources */,
+				55E9D25924636B78006F115E /* MenuItem.swift in Sources */,
 				931E901D23FDD18900964A58 /* SceneDelegate.swift in Sources */,
+				55E9D24D2463546E006F115E /* RestaurantsDetailsView.swift in Sources */,
 				55F36B9D24590E870083E3FE /* HomeController.swift in Sources */,
 				55C2F29D245DF50200F3214A /* SessionStore.swift in Sources */,
 				556477572460B4B000300FD2 /* Ticket.swift in Sources */,
 				55F36B8E2458D5630083E3FE /* Shop.swift in Sources */,
-				5543F30A2458789C000AE9F0 /* FirebaseSession.swift in Sources */,
 				55C2F2A5245E06FC00F3214A /* SingleTicketView.swift in Sources */,
 				55F36B9924590E300083E3FE /* ContainerController.swift in Sources */,
 				55E9D2392461E80D006F115E /* UserTicketView.swift in Sources */,

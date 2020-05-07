@@ -8,10 +8,10 @@
 
 import SwiftUI
 import FirebaseFirestore
-let query3 = Firestore.firestore().collection("Users")
+let usersCollectionReference = Firestore.firestore().collection("Users")
 
 struct SignInView: View{
-    @ObservedObject private var userdetails = FirebaseCollection<UserDetails>(query: query3)
+    @ObservedObject private var userdetails = FirebaseCollection<UserDetails>(collectionRef: usersCollectionReference)
     
     @State var email: String = ""
     @State var password: String = ""

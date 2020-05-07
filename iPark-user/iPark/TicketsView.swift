@@ -13,10 +13,11 @@ import SwiftUI
 
 struct TicketsView: View {
     @EnvironmentObject var session: SessionStore
-    @ObservedObject public var passes = FirebaseCollection<Pass>(query: query5)
+    @ObservedObject public var passes = FirebaseCollection<Pass>(collectionRef: passCollectionReference)
     @State var ary: Array = []
     @ObservedObject var type = Tickets()
     var body: some View {
+        
         VStack(alignment: .leading) {
             Picker(selection: $type.typeofticketselector, label: Text("")) {
                 ForEach(0 ..< type.typeoftickets.count) {
@@ -28,7 +29,11 @@ struct TicketsView: View {
                 SingleTicketView()
             }
             if(type.typeofticketselector == 1){
+                if(session.session != nil){
                 YearlyPassView()
+                }else if (session.session == nil){
+                    AuthView()
+                }
             }
         }
         

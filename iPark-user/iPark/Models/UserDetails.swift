@@ -8,22 +8,35 @@
 
 import FirebaseFirestore
 
-struct UserDetails: Identifiable {
+class UserDetails: FirebaseCodable {
     var id: String
-    var FirstName: String
-    var LastName: String
-    var Email: String
+    @Published var FirstName: String
+    @Published var LastName: String
+    @Published var Email: String
     
-}
-
-extension UserDetails: DocumentSerializable{
-    init?(id: String, dictionary: [String : Any]){
-        guard let FirstName = dictionary["FirstName"] as? String,
-         let LastName = dictionary["LastName"] as? String,
-         let Email = dictionary["Email"] as? String
+    var data: [String: Any]{
+        return[
+            "FirstName": FirstName,
+            "LastName": LastName,
+            "Email": Email
+        ]
+    }
+    
+    required init?(id: String, data: [String : Any]){
+        guard let FirstName = data["FirstName"] as? String,
+         let LastName = data["LastName"] as? String,
+         let Email = data["Email"] as? String
             else{
                 return nil
         }
-        self.init(id:id, FirstName: FirstName, LastName:LastName, Email:Email )
+        self.id = id
+        self.FirstName = FirstName
+        self.LastName = LastName
+        self.Email = Email
+
+ 
     }
+    
 }
+
+

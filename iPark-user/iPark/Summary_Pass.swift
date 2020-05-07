@@ -20,7 +20,7 @@ struct Summary_Pass: View {
        @State public var dateofentry: Date
        @State public var isBooked: Bool = false
        @State public var useremail: String = ""
-    @ObservedObject private var userdetails = FirebaseCollection<UserDetails>(query: query2)
+    @ObservedObject  var userdetails = FirebaseCollection<UserDetails>(collectionRef: usersCollectionReference)
 
        static let taskDateFormat: DateFormatter = {
            let formatter = DateFormatter()

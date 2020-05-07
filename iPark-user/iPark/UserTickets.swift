@@ -16,9 +16,9 @@ let query5 = Firestore.firestore().collection("Passes")
 struct UserTickets: View {
 @EnvironmentObject var session: SessionStore
 
-@ObservedObject public var tickets = FirebaseCollection<Ticket>(query: query1)
-@ObservedObject public var userdetails = FirebaseCollection<UserDetails>(query: query4)
-@ObservedObject public var passes = FirebaseCollection<Pass>(query: query5)
+@ObservedObject public var tickets = FirebaseCollection<Ticket>(collectionRef: ticketsCollectionReference)
+@ObservedObject public var userdetails = FirebaseCollection<UserDetails>(collectionRef: usersCollectionReference)
+@ObservedObject public var passes = FirebaseCollection<Pass>(collectionRef: passCollectionReference)
 
 
     var body: some View {
@@ -47,7 +47,7 @@ struct UserTickets: View {
                 }
                 
             }
-            
+            Divider()
             
             List{
                 Section(header: Text("My Tickets")){

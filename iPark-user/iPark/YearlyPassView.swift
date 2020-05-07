@@ -12,7 +12,7 @@ import SwiftUI
 
 struct YearlyPassView: View {
     @EnvironmentObject var session: SessionStore
-    @ObservedObject public var passes = FirebaseCollection<Pass>(query: query5)
+    @ObservedObject public var passes = FirebaseCollection<Pass>(collectionRef: passCollectionReference)
 
 
   
@@ -25,7 +25,7 @@ struct YearlyPassView: View {
       @ObservedObject var ticket = Tickets()
       
 
-     @ObservedObject private var userdetails = FirebaseCollection<UserDetails>(query: query2)
+     @ObservedObject private var userdetails = FirebaseCollection<UserDetails>(collectionRef: usersCollectionReference)
 
       
 
@@ -44,27 +44,27 @@ struct YearlyPassView: View {
                  
                       }.padding(.vertical, 10)
               }.padding(0).background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color(.gray),
-                                                                                             lineWidth: 1)).padding(.horizontal, 10).frame(width: 450, height: 170)
-              Spacer().frame(height: 30)
-          VStack{
-             
-             
-              Spacer().frame(height: 30)
-
-    
-            ForEach(userdetails.items){
-                                           restaurant in
-                                           if(restaurant.Email == self.session.email1){
-               
+                                                                                     lineWidth: 1)).padding(.horizontal, 10).frame(width: 450, height: 170)
+            Spacer().frame(height: 30)
             VStack{
-                HStack{
-                Text("Email: ").padding(5)
-
-            Text("\(restaurant.Email)").padding(10)
-                }.padding(.horizontal, 20)
-                HStack{
-            Text("Name: ").padding(5)
-              
+                
+                
+                Spacer().frame(height: 30)
+                
+                
+                ForEach(userdetails.items){
+                    restaurant in
+                    if(restaurant.Email == self.session.email1){
+                        
+                        VStack{
+                            HStack{
+                                Text("Email: ").padding(5)
+                                
+                                Text("\(restaurant.Email)").padding(10)
+                            }.padding(.horizontal, 20)
+                            HStack{
+                                Text("Name: ").padding(5)
+                                
               Text("\(restaurant.FirstName) \(restaurant.LastName)").padding(10)
                 }
             } .font(.system(size: 18)).padding(.horizontal, 20)

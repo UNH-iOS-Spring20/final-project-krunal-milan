@@ -19,7 +19,7 @@ class SessionStore: ObservableObject{
 @Published var lastname23: String = ""
     @Published var ip: Bool = false
 
-    @ObservedObject public var passes = FirebaseCollection<Pass>(query: query5)
+    @ObservedObject public var passes = FirebaseCollection<Pass>(collectionRef: passCollectionReference)
 
     
    
