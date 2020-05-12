@@ -18,15 +18,16 @@ struct UserTicketView: View {
       }
        
        
-    let ticket:Ticket
+    @ObservedObject var ticket:Ticket
     var body: some View {
         Group{
         VStack{
             HStack{
                 Text("\(ticket.Typeofticket) Ticket").font(.system(size: 25, weight:. semibold)).padding(15)
             }
-            HStack{
-                Text("Date of Entry: \(ticket.Dateofticket)")
+            VStack{
+                Text("Date of Entry:")
+                Text("\(ticket.Dateofticket)")
                 //Text("\("Hello", formatter: Self.taskDateFormat)")
             }.font(.system(size: 20, weight:. semibold)).padding(20)
             HStack{
@@ -44,6 +45,6 @@ struct UserTicketView: View {
 
 struct UserTicketView_Previews: PreviewProvider {
     static var previews: some View {
-        UserTicketView(ticket:Ticket(id:"1", Amountcharged:"10", Useremail:"milan@milan.com", Dateofticket: "Dateofticket", Numberoftickets:"5", Typeofticket:"Single", Dateofpurchase:"Dateofpurchase"))
+        UserTicketView(ticket:Ticket(id:"1", data:[ "Amountcharged":"10", "Useremail":"milan@milan.com", "Dateofticket": "Dateofticket", "Numberoftickets":"5", "Typeofticket":"Single", "Dateofpurchase":"Dateofpurchase"])!)
     }
 }

@@ -8,35 +8,49 @@
 
 import FirebaseFirestore
 
-struct Ticket: Identifiable {
+class Ticket: FirebaseCodable {
     var id: String
-    var Amountcharged: String
-    var Useremail: String
-    var Dateofticket: String
-    var Numberoftickets: String
-    var Typeofticket: String
-    var Dateofpurchase: String
+    @Published var Amountcharged: String
+    @Published var Useremail: String
+    @Published var Dateofticket: String
+    @Published var Numberoftickets: String
+    @Published var Typeofticket: String
+    @Published var Dateofpurchase: String
     
-    
-    
-    
-}
-
-extension Ticket: DocumentSerializable{
-    init?(id: String, dictionary: [String : Any]){
-        guard let Useremail = dictionary["Useremail"] as? String,
-            let Typeofticket = dictionary["Typeofticket"] as? String,
-            let Dateofticket = dictionary["Dateofticket"] as? String,
-            let Numberoftickets = dictionary["Numberoftickets"] as? String,
-            let Amountcharged = dictionary["Amountcharged"] as? String,
-            let Dateofpurchase = dictionary["Dateofpurchase"] as? String
-
-            
-            else{
-                return nil
-        }
-        self.init(id:id, Amountcharged: Amountcharged, Useremail:Useremail, Dateofticket: Dateofticket, Numberoftickets: Numberoftickets,Typeofticket:Typeofticket, Dateofpurchase: Dateofpurchase )
+    var data: [String: Any]{
+        return[
+            "Amountcharged": Amountcharged,
+            "Useremail": Useremail,
+            "Dateifticket": Dateofticket,
+            "Numberoftickets": Numberoftickets,
+            "Typeofticket": Typeofticket,
+            "Dateofpurchase": Dateofpurchase
+        ]
     }
+    
+    required init?(id: String, data: [String : Any]){
+        guard let Useremail = data["Useremail"] as? String,
+                  let Typeofticket = data["Typeofticket"] as? String,
+                  let Dateofticket = data["Dateofticket"] as? String,
+                  let Numberoftickets = data["Numberoftickets"] as? String,
+                  let Amountcharged = data["Amountcharged"] as? String,
+                  let Dateofpurchase = data["Dateofpurchase"] as? String
+                  else{
+                      return nil
+              }
+      
+        self.id = id
+        self.Amountcharged =  Amountcharged
+        self.Useremail = Useremail
+        self.Dateofticket = Dateofticket
+        self.Numberoftickets = Numberoftickets
+        self.Typeofticket = Typeofticket
+        self.Dateofpurchase = Dateofpurchase
+    
 }
+    
+    
+}
+
 
 

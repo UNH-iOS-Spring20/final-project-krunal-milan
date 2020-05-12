@@ -20,7 +20,7 @@ struct Summary_Pass: View {
        @State public var dateofentry: Date
        @State public var isBooked: Bool = false
        @State public var useremail: String = ""
-    @ObservedObject private var userdetails = FirebaseCollection<UserDetails>(query: query2)
+    @ObservedObject  var userdetails = FirebaseCollection<UserDetails>(collectionRef: usersCollectionReference)
 
        static let taskDateFormat: DateFormatter = {
            let formatter = DateFormatter()
@@ -74,16 +74,16 @@ struct Summary_Pass: View {
                    HStack{
                        Text("Subtotal:                     ")
 
-                       Text("\((childrenquantity * childrenpassprice) + (adultquantity * adultpassprice)) USD")
+                       Text("\(adultquantity * adultpassprice) USD")
                    }.padding(20)
                    HStack{
                        Text("Taxes and Fees:            ")
 
-                       Text("\(((adultquantity * adultpassprice) + (childrenpassprice + childrenquantity))*1/10) USD")
+                       Text("\(((adultquantity * adultpassprice))/10) USD")
                    }.padding(20)
                    HStack{
                        Text("Total:                            ")
-                       Text("\(((adultquantity * adultpassprice) + (childrenpassprice + childrenquantity))*11/10) USD")
+                       Text("\((adultquantity * adultpassprice)*11/10) USD")
                    }.padding(20)
                    Spacer().frame(height: 30)
 

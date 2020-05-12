@@ -8,17 +8,26 @@
 
 import SwiftUI
 import FirebaseFirestore
-let query2 = Firestore.firestore().collection("Users")
+let ticketsCollectionReference = Firestore.firestore().collection("Tickets")
+let passCollectionReference = Firestore.firestore().collection("Passes")
+let rideCollectionReference = Firestore.firestore().collection("Rides")
+let restaurantCollectionReference = Firestore.firestore().collection("Restaurants")
+let shopCollectionReference = Firestore.firestore().collection("Shops")
 
 
 struct ContentView: View {
+    
+    
     @EnvironmentObject var session: SessionStore
-   @ObservedObject public var userdetails = FirebaseCollection<UserDetails>(query: query2)
+   @ObservedObject public var tickets = FirebaseCollection<Ticket>(collectionRef: ticketsCollectionReference)
+    @ObservedObject public var passes = FirebaseCollection<Pass>(collectionRef: passCollectionReference)
+    @ObservedObject public var userdetails = FirebaseCollection<UserDetails>(collectionRef: usersCollectionReference)
+
+
     
 
    func getUser(){
         session.listen()
-    
     
     }
     
@@ -26,20 +35,40 @@ struct ContentView: View {
         
         
         TabView{
+            ///Home Page
             
-            Homepage()
+           
+                NavigationView{
+                    Homepage()
+                
+            }
+
+                
+            
                 .tabItem {
                     Image(systemName: "house.fill")
                     Text("Home")
             }
+            
+            
+            
+            ///Tickets page
+            
+            
+            
             NavigationView{
-                TicketsView()
+                TicketsView().padding(.horizontal, 15)
                     .navigationBarTitle("Buy Tickets")
             }
             .tabItem {
                 Image(systemName: "square.and.pencil")
                 Text("Buy Tickets")
             }
+            
+            
+            
+            /// My Profile Page
+            
             
             
             Group{
@@ -96,15 +125,21 @@ struct ContentView: View {
                 Text("My Profile")
             }
             
-            Text("Homepage Goes here")
-                                    .tabItem {
-                                        Image(systemName: "info.circle.fill")
-                                        Text("iPark Info")
-                                }
-
+            
+            ///iPark Info Page
+            
+            NavigationView{
+                InfoPage()
+                    .navigationBarTitle("iPark Info", displayMode: .inline)
+                }
+            .tabItem {
+                Image(systemName: "info.circle.fill")
+                Text("iPark Info")
             }
+            
         }
-        
+    }
+    
         
     }
     

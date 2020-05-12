@@ -40,12 +40,12 @@ struct SingleTicketView: View{
                 
                    }.padding(0).background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color(.gray),
                                                                                            lineWidth: 1)).padding(.horizontal, 10).frame(width: 450, height: 170)
-            Spacer().frame(height: 30)
+            Spacer().frame(height: 10)
         VStack{
            
             Text("Pick A Date")
             DatePicker("", selection: $ticket.dateofentry, displayedComponents: .date).labelsHidden().frame(height: 170).datePickerStyle(DefaultDatePickerStyle())
-            Spacer().frame(height: 30)
+            Spacer().frame(height: 10)
 
             VStack{
             Text("Select number of Tickets")

@@ -12,7 +12,7 @@ struct UserPassView: View {
     let pass:Pass
     @EnvironmentObject var session: SessionStore
 
-    @ObservedObject public var userdetails = FirebaseCollection<UserDetails>(query: query2)
+    @ObservedObject public var userdetails = FirebaseCollection<UserDetails>(collectionRef: usersCollectionReference)
 
 
     var body: some View {
@@ -46,7 +46,7 @@ struct UserPassView: View {
 
 struct UserPassView_Previews: PreviewProvider {
     static var previews: some View {
-        UserPassView(pass: Pass(id:"1", Amountcharged: "22", Useremail: "id@email.com", Validfrom: "Today", Validupto: "1 Year", Typeofticket:"Yearly Pass"))
+        UserPassView(pass: Pass(id:"1", data:[ "Amountcharged": "22", "Useremail": "id@email.com", "Validfrom": "Today", "Validupto": "1 Year", "Typeofticket":"Yearly Pass"])!)
     }
 }
 
