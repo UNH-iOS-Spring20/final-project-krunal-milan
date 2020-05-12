@@ -19,10 +19,17 @@ class iPark_AdminTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+//    func testShopIntializationSuccessds() {
+//        let iShopInfo = Shop(id: "1", data: ["Name" : "H&M","Location": "west side", "Catagory": "Clothing","Photo":"p1"])
+//
+//        XCTAssertNotNil(iShopInfo)
+//    }
+    
+//    func testRestaurantIntializationSuccessds() {
+//        let iRestaurantInfo = Restaurant(id: "1", data: ["Name": "wayback", "Location": "orange", "Category": "$$", "Cuisine": "american", "Phone": "12345678"])
+//
+//        XCTAssertNotNil(iRestaurantInfo)
+//    }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
